@@ -12,7 +12,6 @@
 *******/
 
 
-
 /******* global *******/
 html {
   height: 100%;
@@ -20,13 +19,14 @@ html {
 
 body {
   background-color: white;
-  font-family: Avenir, Pier Regular, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
 
 section {
   padding-top: 50px;
   padding-bottom: 50px;
+  /* border-bottom: 1px solid #E5E5E5; */
 }
 
 #section-title {
@@ -52,6 +52,10 @@ section {
 
 a:link, :visited, :hover, :active {
   text-decoration: none !important;
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
 }
 
 .center {
@@ -75,7 +79,6 @@ a:link, :visited, :hover, :active {
 .nav-item {
   float: right;
   text-align: center;
-  font-family: Avenir, Pier Bold, sans-serif;
   font-weight: 800;
   color: gray;
   height: 60px;
@@ -165,7 +168,6 @@ button:hover {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-family: Avenir, Pier Regular, sans-serif;
   color: white;
   background: #2f4360 -webkit-gradient(linear,left bottom,left top,from(#424f9b),to(#303a77));
   background: #2f4360 linear-gradient(0deg,#424f9b 0,#303a77);
@@ -321,7 +323,6 @@ button:hover {
 
 .cards {
 	color: #5c67a9;
-	font-family: Avenir, Pier Regular, sans-serif;
 	width: 450px;
 	height: auto;
 	padding: 20px;
