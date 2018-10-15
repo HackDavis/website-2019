@@ -1,11 +1,19 @@
-/******* landing *******/
-/******* about *******/
-/******* tracks *******/
-/******* schedule *******/
-/******* faq *******/
-/******* sponsors *******/
-/******* contact *******/
+/*******
 
+- nav 
+- landing
+- about
+- tracks
+- schedule
+- faq
+- sponsors
+- contact
+
+*******/
+
+
+
+/******* nav *******/
 html {
   height: 100%;
 }
@@ -32,6 +40,54 @@ section {
   padding-top: 60px;
 }
 
+#mlh-trust-badge {
+  position: fixed;
+  top: 0;
+  left: 50px;
+  max-width: 100px;
+  width: 10%;
+  min-width: 60px;
+  display: block;
+}
+
+a:link, :visited, :hover, :active {
+  text-decoration: none !important;
+}
+
+/******* nav *******/
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  float: right;
+}
+
+.nav-item {
+  float: right;
+  text-align: center;
+  font-family: Avenir, Pier Bold, sans-serif;
+  font-weight: 800;
+  color: gray;
+  height: 60px;
+  padding: 20px;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  -webkit-transform: translate(-30px);
+  -moz-transform: translate(-30px);
+  -o-transform: translate(-30px);
+  transform: translate(-30px);
+}
+
+#nav-link {
+  color: rgba(64,64,64,.5);
+}
+
 /******* landing *******/
 .landing-container {
   display: -ms-flexbox;
@@ -42,9 +98,9 @@ section {
   -ms-flex-align: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-top: 6vh;
+  padding-top: 17vh;
   padding-left: 5vw;
-  padding-bottom: 35vh;
+  padding-bottom: 15vh;
   margin-left: 11.5%;
 }
 
@@ -53,7 +109,7 @@ section {
 }
 
 button {
-  margin-top: 12px;
+  margin-top: 19vh;
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   align-items: center !important;
@@ -68,7 +124,12 @@ button {
   border-color: initial !important;
   border-radius: 4px !important;
   padding: 18px 39px !important;
-  text-decoration: none !important;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.95;
 }
 
 .tracks-picture {
@@ -223,6 +284,23 @@ button {
   background: #2f4360 -webkit-gradient(linear,left bottom,left top,from(#424f9b),to(#303a77));
   background: #2f4360 linear-gradient(0deg,#424f9b 0,#303a77);
 }
+
+#footer-content {
+  font-size: 2em;
+  width: 100%;
+}
+
+#footer-content > a {
+  color: rgba(255,255,255,.95);
+  padding: 0 1%;
+  transition: all .2s ease;
+}
+
+#footer-content > a:hover {
+  opacity: 0.75;
+}
+
+
 
 /******* breakpoints *******/
 @media screen and (max-width: 725px) {
