@@ -175,12 +175,11 @@ button:hover {
 
 .schedule-content {
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 }
 
 .day {
 	display: inline-block;
-	width: 30vh;
 	height: 80vh;
 	margin: 0 auto;
 	text-align: center;
@@ -204,7 +203,7 @@ button:hover {
 }
 
 #event {
-	height: 40px;
+	height: 55px;
 	width: 240px;
 	margin: 0 auto;
 	text-align: center;
@@ -272,10 +271,10 @@ button:hover {
 }
 
 #event-msg {
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 14px;
   line-height: 1px;
-  margin-top: 2px;
+  margin-top: 2.5px;
 }
 
 /******* faq *******/
