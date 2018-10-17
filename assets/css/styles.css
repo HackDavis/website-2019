@@ -1,5 +1,7 @@
 /*******
 
+- keyframes
+- global
 - nav 
 - landing
 - about
@@ -8,9 +10,114 @@
 - faq
 - sponsors
 - contact
+- breakpoints
 
 *******/
 
+/******* keyframes *******/
+@-webkit-keyframes slideLeft {
+  0% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes slideDown {
+  0% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
 
 /******* global *******/
 html {
@@ -64,6 +171,7 @@ a:link, :visited, :hover, :active {
   align-items: center;
 }
 
+
 /******* nav *******/
 .nav {
   display: -ms-flexbox;
@@ -91,6 +199,7 @@ a:link, :visited, :hover, :active {
   -moz-transform: translate(-30px);
   -o-transform: translate(-30px);
   transform: translate(-30px);
+  animation: slideDown 200ms ease 750ms 1 normal both running;
 }
 
 #nav-link {
@@ -113,6 +222,11 @@ a:link, :visited, :hover, :active {
   margin-left: 14.5%;
 }
 
+h1 {
+  -webkit-animation: scaleIn 500ms both;
+  animation: scaleIn 500ms both;
+}
+
 .details {
   margin-top: 18px;
 }
@@ -122,7 +236,7 @@ button {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   align-items: center !important;
-  background-color: #303a77;
+  background-color: #011118;
   color: white !important;
   display: -webkit-inline-box !important;
   font-size: 16px !important;
@@ -150,8 +264,7 @@ button:hover {
 /******* about *******/
 .about-container {
   text-align: center;
-  background: #2f4360 -webkit-gradient(linear,left bottom,left top,from(#424f9b),to(#303a77));
-  background: #2f4360 linear-gradient(0deg,#424f9b 0,#303a77);
+  background: #011118;
 }
 
 /******* tracks *******/
@@ -169,8 +282,7 @@ button:hover {
   margin: 0 auto;
   text-align: center;
   color: white;
-  background: #2f4360 -webkit-gradient(linear,left bottom,left top,from(#424f9b),to(#303a77));
-  background: #2f4360 linear-gradient(0deg,#424f9b 0,#303a77);
+  background: #011118;
 }
 
 .schedule-content {
@@ -280,7 +392,7 @@ button:hover {
 /******* faq *******/
 .faq-container {
   text-align: center;
-  background-color: #fff;
+  background-color: #011118;
 }
 
 #faq-content {
@@ -321,7 +433,7 @@ button:hover {
 }
 
 .cards {
-	color: #5c67a9;
+	color: #fff;
 	width: 450px;
 	height: auto;
 	padding: 20px;
@@ -346,14 +458,13 @@ button:hover {
 /******* sponsors *******/
 .sponsors-container {
   text-align: center;
-  background-color: #233240;
+  background-color: #011118;
 }
 
 /******* contact *******/
 .contact-container {
   text-align: center;
-  background: #2f4360 -webkit-gradient(linear,left bottom,left top,from(#424f9b),to(#303a77));
-  background: #2f4360 linear-gradient(0deg,#424f9b 0,#303a77);
+  background: #011118;
 }
 
 #footer-content {
@@ -370,8 +481,6 @@ button:hover {
 #footer-content > a:hover {
   opacity: 0.75;
 }
-
-
 
 /******* breakpoints *******/
 @media screen and (max-width: 725px) {
