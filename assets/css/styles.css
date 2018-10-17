@@ -300,11 +300,8 @@ button:hover {
 }
 
 .day-title {
-	font-size: 20px;
-}
-
-.sunday {
-	letter-spacing: 2.5px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .day-date {
@@ -379,14 +376,16 @@ button:hover {
 #event-title {
 	font-weight: 800;
 	font-size: 16px;
-	line-height: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 #event-msg {
-	font-weight: 300;
-	font-size: 14px;
-  line-height: 1px;
+  font-weight: 300;
+  font-size: 13.9px;
+  line-height: 1.5px;
   margin-top: 2.5px;
+  letter-spacing: 0.3px;
 }
 
 /******* faq *******/
