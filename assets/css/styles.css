@@ -189,7 +189,7 @@ a:link, :visited, :hover, :active {
 .nav-item {
   float: right;
   text-align: center;
-  font-weight: 800;
+  font-weight: 500;
   color: gray;
   height: 60px;
   padding: 20px;
