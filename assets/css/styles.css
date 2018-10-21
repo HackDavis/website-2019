@@ -14,6 +14,8 @@
 
 *******/
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+
 /******* keyframes *******/
 @-webkit-keyframes slideLeft {
   0% {
@@ -249,10 +251,15 @@ button {
   padding: 18px 39px !important;
   text-transform: capitalize;
   cursor: pointer;
+  transition: .5s;
+  background-image: linear-gradient(90deg,#a333c8 0,#a33377 51%,#a333c8);
+  background-size: 200% auto;
 }
 
 button:hover {
   opacity: 0.95;
+  background-image: linear-gradient(90deg,#a333c8 0,#a33377 51%,#a333c8);
+  background-size: 400% auto;
 }
 
 .landing-picture {
