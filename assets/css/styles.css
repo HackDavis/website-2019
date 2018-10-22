@@ -271,7 +271,12 @@ button:hover {
 /******* about *******/
 .about-container {
   text-align: center;
-  background: #011118;
+  background: #fff;
+}
+
+img.social-good {
+  width: 30em;
+  height: auto;
 }
 
 /******* tracks *******/
