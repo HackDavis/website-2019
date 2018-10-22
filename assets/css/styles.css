@@ -275,7 +275,7 @@ button:hover {
 }
 
 img.social-good {
-  width: 30em;
+  width: 100%;
   height: auto;
 }
 
@@ -491,6 +491,17 @@ img.social-good {
 
 #footer-content > a:hover {
   opacity: 0.75;
+}
+
+div#copyright {
+  margin-top: 10px;
+  margin-bottom: -18px;
+}
+
+span {
+  color: #cccccc;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 /******* breakpoints *******/
