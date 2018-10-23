@@ -127,9 +127,10 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #091822;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  margin: 36px 32px 32px;
 }
 
 section {
@@ -139,7 +140,7 @@ section {
 }
 
 #section-title {
-  color: white;
+  color: #091822;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0 auto;
@@ -205,7 +206,7 @@ a:link, :visited, :hover, :active {
 }
 
 #nav-link {
-  color: rgba(64,64,64,.5);
+  color: #fff;
 }
 
 /******* landing *******/
@@ -225,8 +226,15 @@ a:link, :visited, :hover, :active {
 }
 
 h1 {
-  -webkit-animation: scaleIn 500ms both;
-  animation: scaleIn 500ms both;
+  color: #fff;
+  -webkit-animation: scaleIn 200ms ease 800ms 1 normal both running;
+  animation: scaleIn 200ms ease 750ms 1 normal both running;
+}
+
+h3 {
+  color: #fff;
+  -webkit-animation: scaleIn 200ms ease 800ms 1 normal both running;
+  animation: scaleIn 200ms ease 750ms 1 normal both running;
 }
 
 .details {
@@ -254,6 +262,8 @@ button {
   transition: .5s;
   background-image: linear-gradient(90deg,#a333c8 0,#a33377 51%,#a333c8);
   background-size: 200% auto;
+  -webkit-animation: slideUp 200ms ease 750ms 1 normal both running;
+  animation: slideUp 200ms ease 750ms 1 normal both running;
 }
 
 button:hover {
@@ -271,7 +281,7 @@ button:hover {
 /******* about *******/
 .about-container {
   text-align: center;
-  background: #fff;
+  background: #ffffff;
 }
 
 img.social-good {
@@ -282,6 +292,7 @@ img.social-good {
 /******* tracks *******/
 .tracks-container {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .tracks-picture {
@@ -293,8 +304,8 @@ img.social-good {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  color: white;
-  background: #011118;
+  color: #091822;
+  background: #ffffff;
 }
 
 .schedule-content {
@@ -403,7 +414,7 @@ img.social-good {
 /******* faq *******/
 .faq-container {
   text-align: center;
-  background-color: #011118;
+  background-color: #ffffff;
 }
 
 #faq-content {
@@ -444,7 +455,7 @@ img.social-good {
 }
 
 .cards {
-	color: #fff;
+	color: #091822;
 	width: 450px;
 	height: auto;
 	padding: 20px;
@@ -469,13 +480,14 @@ img.social-good {
 /******* sponsors *******/
 .sponsors-container {
   text-align: center;
-  background-color: #011118;
+  background-color: #FFFFFF;
 }
 
 /******* contact *******/
 .contact-container {
   text-align: center;
-  background: #011118;
+  background: #091822;
+  padding-top: 170px;
 }
 
 #footer-content {
