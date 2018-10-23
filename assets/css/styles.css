@@ -1,5 +1,6 @@
 /*******
 
+- font-face
 - keyframes
 - global
 - nav 
@@ -14,9 +15,146 @@
 
 *******/
 
+/* ------------------------------------------------------------ *\
+	font-face
+\* ------------------------------------------------------------ */
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
-/******* keyframes *******/
+/* ------------------------------------------------------------ *\
+	keyframes
+\* ------------------------------------------------------------ */
+@keyframes rotateAround {
+	0% { width: 0; height: 1px; top: 0; left: 80%; }
+	20% { width: 20%; height: 1px; top: 0; left: 80%; }
+	35% { width: 20%; height: 50%; top: 0; left: 99%; }
+	50% { width: 20%; height: 100%; top: 0; left: 99%; }
+	60% { width: 50%; height: 100%; top: 95%; left: 60%; opacity: 1; }
+	100% { width: 0%; height: 100%; top: 95%; left: -20%; opacity: 0; }
+}
+
+@keyframes rotateAroundBottom {
+	0% { width: 0; height: 1px; bottom: 0; right: 80%; }
+	20% { width: 20%; height: 1px; bottom: 0; right: 80%; }
+	35% { width: 20%; height: 50%; bottom: 0; right: 99%; }
+	50% { width: 20%; height: 100%; bottom: 0; right: 99%; }
+	60% { width: 50%; height: 100%; bottom: 95%; right: 60%; opacity: 1; }
+	100% { width: 0%; height: 100%; bottom: 95%; right: -20%; opacity: 0; }
+}
+
+@keyframes fadeInOut {
+	0% { transform: translateX(0); opacity: 1; }
+	50% { transform: translateX(70%); opacity: 0; }
+	51% { transform: translateX(-100%); opacity: 0; }
+	100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+	0% { transform: scale(.4); }
+	4% { transform: scale(.9); }
+	100% { transform: scale(1); }
+}
+
+@keyframes blink {
+	0% { background: #091822; }
+	20%, 100% { background: #d8d7d9; }
+}
+
+@keyframes blinkSec {
+	0% { transform: scale(.8); opacity: 1; visibility: visible; }
+	100% { transform: scale(1); opacity: 1; visibility: visible; }
+}
+
+@keyframes blinkTer {
+	0% { opacity: 1; visibility: visible; }
+	100% { opacity: 1; visibility: visible; }
+}
+
+@keyframes rotate {
+	0%, 100% { transform: scaleX(0); }
+	50% { transform: scaleX(-1); }
+}
+
+@keyframes move {
+	0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+	20% { transform: translate(-50%, -50%) scale(1.02) rotate(25deg); }
+	40% { transform: translate(-50%, -50%) scale(0.97) rotate(48deg); }
+	60% { transform: translate(-50%, -50%) scale(0.94) rotate(32deg); }
+	80% { transform: translate(-50%, -50%) scale(1.06) rotate(67deg); }
+	100% { transform: translate(-50%, -50%) scale(1) rotate(44deg); }
+}
+
+@keyframes movePrimary {
+	0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+	20% { transform: translate(-50%, -50%) scale(1.02) rotate(-25deg); }
+	40% { transform: translate(-50%, -50%) scale(0.97) rotate(-48deg); }
+	60% { transform: translate(-50%, -50%) scale(0.94) rotate(-32deg); }
+	80% { transform: translate(-50%, -50%) scale(1.06) rotate(-67deg); }
+	100% { transform: translate(-50%, -50%) scale(1) rotate(-44deg); }
+}
+
+@keyframes moveSquare {
+	0%, 100% { transform: translate(-50%, -50%) scale(.95) rotate(29deg) rotateX(0deg); }
+	20% { transform: translate(-50%, -50%) scale(1) rotate(29deg) rotateX(5deg); }
+	40% { transform: translate(-50%, -50%) rotate(30deg) rotateX(7deg); }
+	60% { transform: translate(-50%, -50%) rotate(30deg) rotateX(-5deg); }
+	80% { transform: translate(-50%, -50%) rotate(30deg) rotateX(-12deg); }
+}
+
+@keyframes moveSquarePrimary {
+	0%, 100% { transform: translate(-50%, -50%) scale(.95) rotate(61deg) rotateX(0deg); }
+	20% { transform: translate(-50%, -50%) scale(1) rotate(61deg) rotateX(3deg); }
+	40% { transform: translate(-50%, -50%) rotate(60deg) rotateX(8deg); }
+	60% { transform: translate(-50%, -50%) rotate(60deg) rotateX(-5deg); }
+	80% { transform: translate(-50%, -50%) rotate(60deg) rotateX(-12deg); }
+}
+
+@keyframes scaleCircle {
+	0%, 100% { transform: translate(-50%, -50%) scale(1); }
+	33% { transform: translate(-50%, -50%) scale(1.1); }
+	66% { transform: translate(-50%, -50%) scale(.9); }
+}
+
+@keyframes translateLeft {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(-200%, -50%); }
+}
+
+@keyframes translateRight {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(150%, -50%); }
+}
+
+@keyframes translateTop {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(-50%, -200%); }
+}
+
+@keyframes translateBottom {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(-50%, 100%); }
+}
+
+@keyframes translateTopLeft {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(-150%, -200%); }
+}
+
+@keyframes translateTopRight {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(50%, -200%); }
+}
+
+@keyframes translateBottomLeft {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(-150%, 100%); }
+}
+
+@keyframes translateBottomRight {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(50%, 100%); }
+}
+
 @-webkit-keyframes slideLeft {
   0% {
       -webkit-transform: translateX(-20px);
@@ -121,7 +259,9 @@
   }
 }
 
-/******* global *******/
+/* ------------------------------------------------------------ *\
+	global
+\* ------------------------------------------------------------ */
 html {
   height: 100%;
 }
@@ -175,7 +315,9 @@ a:link, :visited, :hover, :active {
 }
 
 
-/******* nav *******/
+/* ------------------------------------------------------------ *\
+	nav
+\* ------------------------------------------------------------ */
 .nav {
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +351,9 @@ a:link, :visited, :hover, :active {
   color: #fff;
 }
 
-/******* landing *******/
+/* ------------------------------------------------------------ *\
+	landing
+\* ------------------------------------------------------------ */
 .landing-container {
   display: -ms-flexbox;
   display: flex;
@@ -266,8 +410,19 @@ button {
   animation: slideUp 200ms ease 750ms 1 normal both running;
 }
 
+button:hover:before {
+  /* color: #fff; */
+  animation: rotateAround 1s ease-out;
+}
+
+button:hover:after {
+  /* color: #fff; */
+  animation: rotateAroundBottom 1s ease-out;
+}
+
 button:hover {
   opacity: 0.95;
+  color: #fff;
   background-image: linear-gradient(90deg,#a333c8 0,#a33377 51%,#a333c8);
   background-size: 400% auto;
 }
@@ -289,7 +444,9 @@ img.social-good {
   height: auto;
 }
 
-/******* tracks *******/
+/* ------------------------------------------------------------ *\
+	tracks
+\* ------------------------------------------------------------ */
 .tracks-container {
   text-align: center;
   background-color: #ffffff;
@@ -299,7 +456,9 @@ img.social-good {
   padding-bottom: 40px;
 }
 
-/******* schedule *******/
+/* ------------------------------------------------------------ *\
+	schedule
+\* ------------------------------------------------------------ */
 .schedule-container {
   width: 100%;
   margin: 0 auto;
@@ -451,7 +610,6 @@ img.social-good {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-
 }
 
 .cards {
@@ -477,17 +635,28 @@ img.social-good {
 	font-size: 20px;
 }
 
-/******* sponsors *******/
+/* ------------------------------------------------------------ *\
+	sponsors
+\* ------------------------------------------------------------ */
 .sponsors-container {
   text-align: center;
   background-color: #FFFFFF;
 }
 
-/******* contact *******/
+/* ------------------------------------------------------------ *\
+	contact
+\* ------------------------------------------------------------ */
 .contact-container {
   text-align: center;
   background: #091822;
   padding-top: 170px;
+}
+
+img.logo-picture {
+  margin-top: -80px;
+  margin-bottom: 40px;
+  width: auto;
+  height: 100px;
 }
 
 #footer-content {
@@ -516,7 +685,9 @@ span {
   font-weight: 500;
 }
 
-/******* breakpoints *******/
+/* ------------------------------------------------------------ *\
+	breakpoints
+\* ------------------------------------------------------------ */
 @media screen and (max-width: 725px) {
   .schedule-content {
       width: 100%;
