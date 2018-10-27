@@ -19,8 +19,40 @@
 	font-face
 \* ------------------------------------------------------------ */
 
+@import url("https://fonts.googleapis.com/css?family=Futura:100,300,500,700,900");
+
 @font-face {
-  font-family: Graphik;
+  font-family: "Graphik";
+  font-weight: 100;
+  font-style: normal;
+  src: url("/assets/fonts/Graphik-100-Thin.otf") format("otf")
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 300;
+  font-style: light;
+  src: url("/assets/fonts/Graphik-300-Light.otf") format("otf")
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Graphik-400-Regular.otf") format("otf")
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 500;
+  font-style: medium;
+  src: url("/assets/fonts/Graphik-500-Medium.otf") format("otf")
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-weight: 700;
+  font-style: bold;
   src: url("/assets/fonts/Graphik-700-Bold.otf") format("otf")
 }
 
@@ -150,9 +182,9 @@ html {
 body {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-style: normal;
-  background: #07252f;
-  background: -webkit-linear-gradient(-50deg, #005E7C, #07252f);
-  background: linear-gradient(-50deg, #005E7C, #07252f);
+  background: #141E30;
+  background: -webkit-linear-gradient(-50deg, #243B55 32%, #141E30 100%);
+  background: linear-gradient(-50deg, #243B55 32%, #141E30 100%);
 }
 
 section {
@@ -161,14 +193,16 @@ section {
 }
 
 #section-title {
-  color: #091822;
-  font-size: 36px;
+  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 2.6em;
   font-weight: 700;
-  text-transform: uppercase;
+  color: #091822;
+  text-transform: capitalize;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
   padding-top: 60px;
+  letter-spacing: -.025em;
 }
 
 #mlh-trust-badge {
@@ -255,9 +289,15 @@ a:link, :visited, :hover, :active {
   padding-bottom: 23vh;
 }
 
+span.title {
+  font-weight: 100;
+  font-family: "Futura";
+}
+
 h1.title {
   font-size: 60px;
   font-weight: 700;
+  font-family: "Futura";
   color: #fff;
   animation: fadeIn .5s both;
   animation-delay: .2s;
@@ -273,6 +313,10 @@ h3.facts {
 
 .details {
   margin-top: 18px;
+}
+
+code.facts {
+  color: #7FFFD6;
 }
 
 button {
@@ -361,8 +405,8 @@ img.social-good {
   background-color: #f6f6f6;
 }
 
-img {
-  width: 40%;
+img.tracks-img {
+  width: 23%;
   height: auto;
 }
 
