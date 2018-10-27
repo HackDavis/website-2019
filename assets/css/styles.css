@@ -187,6 +187,10 @@ body {
   background: linear-gradient(-50deg, #243B55 32%, #141E30 100%);
 }
 
+img {
+  image-rendering: optimizeQuality;
+}
+
 section {
   padding: 70px;
 }
@@ -253,7 +257,7 @@ img.hackdavis {
   width: 18em;
   height: auto;
   animation: fadeIn .5s both;
-  animation-delay: .2s;
+  animation-delay: .20s;
 }
 
 h3.facts {
@@ -312,6 +316,8 @@ img.tower {
   -webkit-transform: scale(2.1);
   -ms-transform: scale(2.1);
   transform: scale(2.1);
+  animation: fadeIn .5s both;
+  animation-delay: .85s;
 }
 
 /******* about *******/
