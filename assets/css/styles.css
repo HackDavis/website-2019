@@ -300,17 +300,15 @@ button:hover {
 }
 
 .landing-picture {
-  right: 0;
   padding-right: 15%;
-  position: absolute;
 }
 
 img.tower {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(1.6);
-  -ms-transform: scale(1.6);
-  transform: scale(1.6);
+  -webkit-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  transform: scale(1.9);
 }
 
 /******* about *******/
