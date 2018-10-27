@@ -14,6 +14,9 @@
 
 *******/
 
+/* Ensure elements are hidden while ScrollEntrance is loading */
+[data-entrance] { visibility: hidden; }
+
 /* ------------------------------------------------------------ *\
 	font-face
 \* ------------------------------------------------------------ */
