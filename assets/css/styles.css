@@ -3,7 +3,6 @@
 - font-face
 - keyframes
 - global
-- nav 
 - landing
 - about
 - tracks
@@ -188,8 +187,7 @@ body {
 }
 
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
 }
 
 #section-title {
@@ -235,43 +233,6 @@ a:link, :visited, :hover, :active {
   align-items: center;
 }
 
-
-/* ------------------------------------------------------------ *\
-	nav
-\* ------------------------------------------------------------ */
-.nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  float: right;
-}
-
-.nav-item {
-  float: right;
-  text-align: center;
-  font-weight: 500;
-  color: gray;
-  height: 60px;
-  padding: 20px;
-  -webkit-transition: all .2s ease-out;
-  -moz-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-  -webkit-transform: translate(-30px);
-  -moz-transform: translate(-30px);
-  -o-transform: translate(-30px);
-  transform: translate(-30px);
-  animation: slideDown 200ms ease 750ms 1 normal both running;
-}
-
-#nav-link {
-  color: #fff;
-}
-
 /* ------------------------------------------------------------ *\
 	landing
 \* ------------------------------------------------------------ */
@@ -289,15 +250,30 @@ a:link, :visited, :hover, :active {
   padding-bottom: 23vh;
 }
 
-span.title {
-  font-weight: 100;
-  font-family: "Futura";
+p.date {
+  color: #7FFFD6;
+  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  word-spacing: 0.10em;
+  animation: fadeIn .5s both;
+  animation-delay: .2s;
 }
 
 h1.title {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 100;
   font-family: "Futura";
+  text-transform: uppercase;
+  color: #fff;
+  animation: fadeIn .5s both;
+  animation-delay: .2s;
+}
+
+span.title {
+  font-size: 57px;
+  font-weight: 500;
+  font-family: "Futura";
+  text-transform: uppercase;
   color: #fff;
   animation: fadeIn .5s both;
   animation-delay: .2s;
@@ -412,7 +388,7 @@ img.tracks-img {
 
 p.tracks-des {
   text-align: justify;
-  max-width: 15em;
+  max-width: 20em;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -448,6 +424,8 @@ p.tracks-des {
 }
 
 .day-title {
+  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -529,10 +507,11 @@ p.tracks-des {
 }
 
 #event-msg {
+  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 13.9px;
   line-height: 1.5px;
-  margin-top: 2.5px;
+  margin-top: 3px;
   letter-spacing: 0.3px;
 }
 
@@ -597,8 +576,18 @@ p.tracks-des {
 }
 
 .cards .question {
+  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-weight: 600;
-	font-size: 20px;
+  font-size: 20px;
+}
+
+p.answer {
+  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  word-spacing: .01em;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.5;
+  letter-spacing: -.005em;
 }
 
 /* ------------------------------------------------------------ *\
