@@ -185,7 +185,7 @@ body {
 }
 
 section {
-  padding: 50px;
+  padding: 70px;
 }
 
 #section-title {
@@ -197,7 +197,7 @@ section {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
-  padding-top: 60px;
+  padding-top: 10px;
   letter-spacing: -.025em;
 }
 
@@ -300,15 +300,15 @@ button:hover {
 }
 
 .landing-picture {
-  padding-right: 15%;
+  padding-right: 7vw;
 }
 
 img.tower {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(1.9);
-  -ms-transform: scale(1.9);
-  transform: scale(1.9);
+  -webkit-transform: scale(2.1);
+  -ms-transform: scale(2.1);
+  transform: scale(2.1);
 }
 
 /******* about *******/
@@ -318,27 +318,23 @@ img.tower {
 }
 
 h1.social-good-text {
-  font-size: 48px;
+  font-size: 2.6em;
   font-weight: 700;
   letter-spacing: -.025em;
   line-height: 1.1;
-  color: #291842;
   text-align: -webkit-auto;
   color:#fff;
 }
 
 p.about-text {
-  margin-top: 28px;
-  color: #868e96;
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.6;
-  text-align: -webkit-auto;
-  width: 26em;
-  letter-spacing: -.005em;
-  word-spacing: .01em;
   -webkit-font-smoothing: subpixel-antialiased;
+  text-align: -webkit-auto;
+  color: #868e96;
+  max-width: 26em;
+  margin-top: 28px;
   line-height: 1.5;
 }
 
@@ -358,6 +354,7 @@ img.social-good {
 img.tracks-img {
   width: 23%;
   height: auto;
+  transform: translateX(-12px);
 }
 
 .tracks-picture {
@@ -378,6 +375,7 @@ p.tracks-des {
   margin-right: auto;
   margin-left: auto;
   font-size: 17px;
+  color: rgba(44,62,80,0.6);
   line-height: 30px;
   text-align: -webkit-left;
   text-align: left;
@@ -390,13 +388,12 @@ p.tracks-des {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  color: #091822;
-  background: #f6f6f6;
+  background: #141E30;
 }
 
 .schedule-content {
 	width: 100%;
-	height: 60vh;
+  height: 60vh;
 }
 
 .day {
@@ -405,12 +402,13 @@ p.tracks-des {
 	margin: 0 auto;
 	text-align: center;
 	padding-left: 80px;
-	padding-right: 80px;
+  padding-right: 80px;
+  color: #fff;
 }
 
 .day-title {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -453,14 +451,13 @@ p.tracks-des {
 }
 
 #time-box {
-	border-top: 2px solid #091822;
+	border-top: 2px solid #fff;
 	position: absolute;
 	width: 100px;
 	height: 30px;
-
 	-webkit-transform: translate(-55px, -5px);
-    -moz-transform: translate(-55px, -5px);
-    -o-transform: translate(-55px, -5px);
+  -moz-transform: translate(-55px, -5px);
+  -o-transform: translate(-55px, -5px);
 	transform: translate(-55px, -5px);
 }
 
@@ -503,7 +500,7 @@ p.tracks-des {
 /******* faq *******/
 .faq-container {
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #EFECEC;
 }
 
 #faq-content {
@@ -562,7 +559,7 @@ p.tracks-des {
 
 .cards .question {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
-	font-weight: 600;
+	font-weight: 700;
   font-size: 20px;
 }
 
@@ -620,9 +617,9 @@ div#copyright {
 }
 
 span {
-  color: #cccccc;
+  color:rgba(249,250,252,0.85);
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 /* ------------------------------------------------------------ *\
