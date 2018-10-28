@@ -73,3 +73,13 @@ $(document).ready(function(){
       percentage = (valueAttr/maxAttr) * 100;  
   });
 });
+
+// faq toggle
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
