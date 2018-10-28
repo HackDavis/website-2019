@@ -1,6 +1,6 @@
 // set typed
 var typed = new Typed('#typed', {
-  strings: ["// code for social good", "February 9 - 10, 2019", "750+ hackers", "24 hours", "$8k prizes", "100 projects demoed"],
+  strings: ['// code for social good', 'February 9 - 10, 2019', '750+ hackers', '24 hours', '$8k prizes', '100 projects demoed'],
   typeSpeed: 25,
   backSpeed: 8,
   backDelay: 1500,
@@ -12,7 +12,7 @@ var typed = new Typed('#typed', {
 });
 
 // faq toggle
-const items = document.querySelectorAll(".accordion a");
+const items = document.querySelectorAll('.accordion a');
 
 function toggleAccordion(){
   this.classList.toggle('active');
@@ -33,8 +33,8 @@ $(document).ready(function(){
   });
 
   // for the lulz
-  console.image("https://i.imgflip.com/2l6ai3.jpg");
-  console.log("Apply at LINK_TO_APPLY")
+  console.image('https://i.imgflip.com/2l6ai3.jpg');
+  console.log('Apply at LINK_TO_APPLY')
 
   var getMax = function(){
     return $(document).height() - $(window).height();
