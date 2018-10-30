@@ -280,7 +280,8 @@ code.facts {
 }
 
 button {
-  margin-top: 11vh;
+  transform: translateY(75px);
+  -webkit-transform: translateY(75px);
   -webkit-box-pack: center;
   -webkit-box-align: center;
   align-items: center;
@@ -305,8 +306,8 @@ button {
 
 button:hover {
   opacity: 0.95;
-  -webkit-transform: translateY(-4px);
-  transform: translateY(-4px);
+  transform: translateY(71px);
+  -webkit-transform: translateY(71px);
 }
 
 .landing-picture {
@@ -334,7 +335,8 @@ h1.social-good-text {
   font-weight: 700;
   letter-spacing: -.025em;
   line-height: 1.1;
-  text-align: -webkit-auto;
+  text-align: -webkit-left;
+  text-align: left;
   color:#fff;
 }
 
@@ -343,7 +345,8 @@ p.about-text {
   font-size: 17px;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
-  text-align: -webkit-auto;
+  text-align: -webkit-left;
+  text-align: left;
   color: #868e96;
   max-width: 26em;
   margin-top: 28px;
@@ -551,7 +554,7 @@ p.tracks-des {
 }
 
 .accordion a::after {
-  content: url(../img/plus.svg);
+  content: url(../img/down.svg);
   position: absolute;
   float: right;
   right: 1rem;
@@ -564,7 +567,7 @@ p.tracks-des {
 }
 
 .accordion a.active::after {
-  content: url(../img/minus.svg);
+  content: url(../img/up.svg);
   color: #03b5d2;
 }
 
@@ -612,10 +615,10 @@ p.tracks-des {
 }
 
 img.logo-picture {
-  margin-top: -80px;
+  margin-top: -110px;
   margin-bottom: 40px;
   width: auto;
-  height: 100px;
+  height: 110px;
 }
 
 #footer-content {
