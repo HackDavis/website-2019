@@ -185,9 +185,6 @@ html {
 body {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-style: normal;
-  background: #141E30;
-  background: -webkit-linear-gradient(-50deg, #243B55 32%, #141E30 100%);
-  background: linear-gradient(-50deg, #243B55 32%, #141E30 100%);
 }
 
 img {
@@ -250,6 +247,9 @@ a:link, :visited, :hover, :active {
   padding-top: 21vh;
   padding-left: 10vw;
   padding-bottom: 28vh;
+  background: #141E30;
+  background: -webkit-linear-gradient(-50deg, #243B55 32%, #141E30 100%);
+  background: linear-gradient(-50deg, #243B55 32%, #141E30 100%);
   /* background-image: url(../img/tower.png);
   background-size: cover;
   background-position: center center;
