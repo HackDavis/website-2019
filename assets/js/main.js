@@ -1,6 +1,6 @@
 // set typed
 var typed = new Typed('#typed', {
-  strings: ['// code for social good', 'February 9 - 10, 2019', '750+ hackers', '24 hours', '$8k prizes', '100 projects demoed'],
+  strings: ['// code for social good'],
   typeSpeed: 25,
   backSpeed: 8,
   backDelay: 1500,
@@ -88,15 +88,28 @@ $(document).ready(function(){
 
 // scroll to top 
 $(window).scroll(function() {
-  if ($(this).scrollTop() >= 600) {    // If page is scrolled more than N px
-      $('#top').fadeIn("fast");       // Fade in the arrow
+  if ($(this).scrollTop() >= 600) {
+    $('#top').fadeIn("fast");
   } else {
-      $('#top').fadeOut("fast");      // Else fade out the arrow
+    $('#top').fadeOut("fast");
   }
 });
 
-$('#top').click(function() {            // When arrow is clicked
+$('#top').click(function() {
   $('body,html').animate({
-      scrollTop : 0                   // Scroll to top of body
+    scrollTop : 0
   }, 500);
+});
+
+// copy email
+new ClipboardJS('.sponsor-us');
+var sponsorUsBtn = document.querySelector('.sponsor-us');
+
+sponsorUsBtn.addEventListener('click', () => {  
+  var clipboardCaption = document.querySelector('.clipboard-caption');
+  clipboardCaption.style.visibility = "visible";
+
+  window.setTimeout(() => {
+    clipboardCaption.style.visibility = "hidden";
+  }, 2000)
 });

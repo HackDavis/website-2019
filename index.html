@@ -32,6 +32,7 @@ Apply here: LINK
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script type="text/javascript" src="assets/js/scroll-entrance.min.js"></script>
     <script defer type="text/javascript" src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
 
@@ -62,10 +63,17 @@ Apply here: LINK
           <img src="assets/img/hackdavis.png" alt="hackdavis" class="hackdavis">
           <div class="details">
             <code class="facts" id="typed" style="animation: fadeIn .5s both;animation-delay: .30s;"></code>
-            <h3 class="facts" style="animation: fadeIn .5s both;animation-delay: .35s;"></h3>
-            <a href="http://eepurl.com/djDK0j" target="_blank">
-              <button>get notified</button>
-            </a>
+            <code class="facts" style="animation: fadeIn .5s both;animation-delay: .35s;"><br><br>February 9 - 10, 2019</code>
+            <code class="facts" style="animation: fadeIn .5s both;animation-delay: .40s;"><br>University of California, Davis</code>
+            <div>
+              <a href="http://eepurl.com/djDK0j" target="_blank">
+                <button class="get-notified">get notified</button>
+              </a>
+              <button class="sponsor-us" data-clipboard-text="team@hackdavis.io">sponsor us</button>
+              <div class="clipboard-caption">
+                copied email! 🎉
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
@@ -131,7 +139,7 @@ Apply here: LINK
     </section>
 
     <section class="schedule-container">
-      <p id="section-title" style="color: #fff;">schedule</p>
+      <p id="section-title" data-entrance="fade">schedule</p>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -314,7 +322,7 @@ Apply here: LINK
     </section>
 
     <section class="faq-container">
-      <p id="section-title">FAQ</p>
+      <p id="section-title" data-entrance="fade">FAQ</p>
       <div class="faq-content center">
         <div class="accordion">
           <div class="accordion-item" data-entrance="fade" data-entrance-delay="100">
@@ -378,8 +386,8 @@ Apply here: LINK
     </section>
 
     <section class="sponsors-container">
-      <p id="section-title">sponsors</p>
-      <p>If you're interested in sponsoring us, please contact us at <a href="mailto:team@hackdavis.io">team@hackdavis.io</a></p>
+      <p id="section-title" data-entrance="fade">sponsors</p>
+      <p class="sponsors-text" data-entrance="fade">If you're interested in sponsoring us, please contact us at <a href="mailto:team@hackdavis.io">team@hackdavis.io</a></p>
     </section>
 
     <section class="contact-container">
