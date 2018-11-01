@@ -6,7 +6,7 @@ var typed = new Typed('#typed', {
   backDelay: 1500,
   startDelay: 1000,
   fadeOut: false,
-  loop: true,
+  loop: false,
   shuffle: false,
   cursorChar: '_'
 });
@@ -89,13 +89,13 @@ $(document).ready(function(){
 // scroll to top 
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 600) {
-    $('#top').fadeIn("fast");
+    $('#scroll-to-top').fadeIn("fast");
   } else {
-    $('#top').fadeOut("fast");
+    $('#scroll-to-top').fadeOut("fast");
   }
 });
 
-$('#top').click(function() {
+$('#scroll-to-top').click(function() {
   $('body,html').animate({
     scrollTop : 0
   }, 500);
