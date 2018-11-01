@@ -4,6 +4,7 @@
 - keyframes
 - global
 - landing
+- stats
 - about
 - tracks
 - schedule
@@ -293,6 +294,18 @@ button {
   transition: .5s;
 }
 
+code {
+  color: #7FFFD6;
+}
+
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
 /* ------------------------------------------------------------ *\
 	landing
 \* ------------------------------------------------------------ */
@@ -324,10 +337,6 @@ img.hackdavis {
 
 .details {
   margin-top: 18px;
-}
-
-code.facts {
-  color: #7FFFD6;
 }
 
 button.get-notified {
@@ -382,6 +391,29 @@ img.tower {
   transform: scale(2.1);
   animation: fadeIn .5s both;
   animation-delay: .85s;
+}
+
+/******* stats *******/
+.stats-container {
+  text-align: center;
+  background: #091822;
+}
+
+h2.stats {
+  font-weight: 900;
+  font-size: 2.3em;
+}
+
+.list-features li {
+  border-left: 1px solid #dee9ee;
+  border-right: 1px solid #dee9ee;
+  text-align: center;
+  padding: 31px 0;
+}
+
+.list-features li h2 small {
+  font-size: 0.84em;
+  font-weight: 900;
 }
 
 /******* about *******/
