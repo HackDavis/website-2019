@@ -59,6 +59,13 @@
   src: url("/assets/fonts/Graphik-700-Bold.otf") format("otf")
 }
 
+@font-face {
+  font-family: "Graphik";
+  font-weight: 900;
+  font-style: bold;
+  src: url("/assets/fonts/Graphik-900-Super.otf") format("otf")
+}
+
 /* ------------------------------------------------------------ *\
 	keyframes
 \* ------------------------------------------------------------ */
@@ -264,19 +271,19 @@ span.underline {
 }
 
 .hack {
-  background: linear-gradient(45deg, #00ac53, #23c3e0);
+  background: linear-gradient(45deg, #3E847C, #70F0D8);
 }
 
 .health {
-  background: linear-gradient(45deg, #9d316e, #de2d3e);
+  background: linear-gradient(45deg, #9d316e, #FF8980);
 }
 
 .environment {
-  background: linear-gradient(45deg, #3a3d98, #6f22b9);
+  background: linear-gradient(45deg, #89B338, #6B9823)
 }
 
 .education {
-	background: linear-gradient(45deg, #ee2d29, #f8ae2c);
+	background: linear-gradient(45deg, #f8ae2c, #ee2d29);
 }
 
 .schedule {
@@ -288,7 +295,7 @@ span.underline {
 }
 
 .sponsors {
-  background: linear-gradient(45deg, #ee2d29, #f8ae2c);
+  background: linear-gradient(45deg, #007CFF, #6f22b9);
 }
 
 /* #mlh-trust-badge {
@@ -381,6 +388,10 @@ img.hackdavis {
 
 .details {
   margin-top: 18px;
+}
+
+.typed-cursor {
+  color: #7FFFD6;
 }
 
 button.get-notified {
@@ -753,7 +764,6 @@ p.tracks-des {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(134, 142, 150, 0.9);
-  /* height: 30px; */
 }
 
 .accordion .content.active {
