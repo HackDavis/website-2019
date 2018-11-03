@@ -6,7 +6,7 @@ var typed = new Typed('#typed', {
   backDelay: 1500,
   startDelay: 1000,
   fadeOut: false,
-  loop: false,
+  loop: true,
   shuffle: false,
   cursorChar: '_'
 });
