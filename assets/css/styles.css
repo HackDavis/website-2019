@@ -107,6 +107,110 @@
   }
 }
 
+@-webkit-keyframes slideLeft {
+  0% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes slideDown {
+  0% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+}
+
 /* ------------------------------------------------------------ *\
 	global
 \* ------------------------------------------------------------ */
@@ -215,7 +319,7 @@ button {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   align-items: center;
-  color: #0A3442;
+  color: rgba(13, 52, 68, 0.7);
   display: -webkit-inline-box;
   font-size: 15px;
   font-weight: 500;
@@ -224,7 +328,7 @@ button {
   border-style: none;
   border-color: initial;
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 10px 25px;
   text-transform: capitalize;
   cursor: pointer;
   transition: .5s;
@@ -254,7 +358,7 @@ p {
   -ms-flex-align: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 33vh 0 33vh 10vw;
+  padding: 33vh 0 33vh 8vw;
   background: #141E30;
   background: -webkit-linear-gradient(-45deg, #141E30, #3e6692, #141E30);
   background: linear-gradient(-45deg, #141E30, #3e6692, #141E30);
@@ -404,12 +508,12 @@ h1.social-good-text {
 
 p.about-text {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: -webkit-left;
   text-align: left;
-  color: #868e96;
+  color: rgba(134, 142, 150, 1);
   max-width: 26em;
   margin-top: 28px;
   line-height: 1.5;
@@ -451,8 +555,8 @@ p.tracks-des {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  font-size: 17px;
-  color: #868e96;
+  font-size: 18px;
+  color: rgba(134, 142, 150, 1);
   line-height: 30px;
   text-align: -webkit-left;
   text-align: left;
@@ -478,6 +582,7 @@ p.tracks-des {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 200;
   font-size: 20px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -496,6 +601,14 @@ p.tracks-des {
 	padding-bottom: 20px;
 }
 
+#event > p {
+	position: absolute;
+	-webkit-transform: translate(10px, -10px);
+  -moz-transform: translate(10px, -10px);
+  -o-transform: translate(10px, -10px);
+	transform: translate(10px, -10px);
+}
+
 #time, #details {
 	display: inline-block;
 }
@@ -510,7 +623,7 @@ p.tracks-des {
 }
 
 #time-box {
-	border-top: 2px solid #fff;
+	border-top: 2px solid #7FFFD6;
 	position: absolute;
 	width: 100px;
 	height: 30px;
@@ -542,18 +655,19 @@ p.tracks-des {
 
 #event-title {
 	font-weight: 800;
-	font-size: 16px;
-  line-height: 25px;
+	font-size: 17px;
+  line-height: 27px;
   text-transform: uppercase;
 }
 
 #event-msg {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
+  color: rgba(134, 142, 150, 0.95);
   line-height: 1.5px;
   margin-top: 3px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 /******* faq *******/
@@ -589,13 +703,19 @@ p.tracks-des {
   padding: 1rem 3rem 1rem 1rem;
   font-size: 1.15rem;
   font-weight: 700;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #7FFFD6;
 }
 
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
   color: #fff;
+}
+
+.accordion a.active {
+  color: #fff;
+  opacity: .75;
+  border-bottom: 1px solid #7FFFD6;
 }
 
 .accordion a::after {
@@ -611,6 +731,11 @@ p.tracks-des {
   text-align: center;
 }
 
+.accordion a.active::after {
+  content: url(../img/up.svg);
+  color: #03b5d2;
+}
+
 .accordion .content {
   opacity: 0;
   padding: 0 1rem;
@@ -618,6 +743,7 @@ p.tracks-des {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
+  -moz-transition: all 0.2s ease 0.15s;
   -webkit-transition: all 0.2s ease 0.15s;
   -o-transition: all 0.2s ease 0.15s;
   transition: all 0.2s ease 0.15s;
@@ -626,8 +752,18 @@ p.tracks-des {
 .accordion .content p {
   font-size: 1rem;
   font-weight: 400;
-  color: #dacccc;
-  opacity: 0.90;
+  color: rgba(134, 142, 150, 0.9);
+  /* height: 30px; */
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -moz-transition: all 0.35s ease 0.15s;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
 }
 
 /* ------------------------------------------------------------ *\
@@ -682,8 +818,8 @@ div#copyright {
   margin-bottom: -18px;
 }
 
-span {
-  color:rgba(249,250,252,0.95);
+#copyright > span {
+  color:rgba(249,250,252,0.75);
   font-size: 0.9em;
   font-weight: normal;
 }
@@ -710,6 +846,14 @@ progress::-webkit-progress-bar {
   background-color: transparent;
 }
 
+.flat::-webkit-progress-value {
+  background-color: #51C9CC;
+}
+
+.flat::-moz-progress-bar {
+  background-color: #51C9CC;
+}
+
 .progress-container {
   width: 100%;
   background-color: transparent;
@@ -718,6 +862,12 @@ progress::-webkit-progress-bar {
   left: 0;
   height: .18em;
   display: block;
+}
+
+.progress-bar {
+  width: 50%;
+  display: block;
+  height: inherit;
 }
 
 /* ------------------------------------------------------------ *\
@@ -784,6 +934,11 @@ progress::-webkit-progress-bar {
 @media screen and (max-width: 768px) {
   #section-title {
     margin-bottom: 40px;
+  }
+
+  .schedule-content {
+    width: 100%;
+    height: 175vh;
   }
 
   img.tower {
