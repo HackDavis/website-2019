@@ -737,7 +737,7 @@ p.tracks-des {
 .accordion .content p {
   font-size: 1rem;
   font-weight: 400;
-  color: #fff;
+  color: #dacccc;
   opacity: 0.90;
 }
 
@@ -817,15 +817,12 @@ progress {
   left: 0;
   top: 0;
   width: 100%;
-  height: .25em;
+  height: .30em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* Get rid of the default border in Firefox/Opera. */
   border: none;
-  /* For Firefox/IE10+ */
   background-color: transparent;
-  /* For IE10+, color of the progress bar */
   color: #51C9CC;
 }
 
