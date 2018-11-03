@@ -107,110 +107,6 @@
   }
 }
 
-@-webkit-keyframes slideLeft {
-  0% {
-      -webkit-transform: translateX(-20px);
-      transform: translateX(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-      -webkit-transform: translateX(-20px);
-      transform: translateX(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes slideDown {
-  0% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes slideDown {
-  0% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes scaleIn {
-  0% {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes scaleIn {
-  0% {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes slideUp {
-  0% {
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes slideUp {
-  0% {
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
 /* ------------------------------------------------------------ *\
 	global
 \* ------------------------------------------------------------ */
@@ -600,14 +496,6 @@ p.tracks-des {
 	padding-bottom: 20px;
 }
 
-#event > p {
-	position: absolute;
-	-webkit-transform: translate(10px, -10px);
-  -moz-transform: translate(10px, -10px);
-  -o-transform: translate(10px, -10px);
-	transform: translate(10px, -10px);
-}
-
 #time, #details {
 	display: inline-block;
 }
@@ -710,12 +598,6 @@ p.tracks-des {
   color: #fff;
 }
 
-.accordion a.active {
-  color: #fff;
-  opacity: .75;
-  border-bottom: 1px solid #e5e5e5;
-}
-
 .accordion a::after {
   content: url(../img/down.svg);
   position: absolute;
@@ -727,11 +609,6 @@ p.tracks-des {
   width: 30px;
   height: 30px;
   text-align: center;
-}
-
-.accordion a.active::after {
-  content: url(../img/up.svg);
-  color: #03b5d2;
 }
 
 .accordion .content {
@@ -751,15 +628,6 @@ p.tracks-des {
   font-weight: 400;
   color: #dacccc;
   opacity: 0.90;
-}
-
-.accordion .content.active {
-  opacity: 1;
-  padding: 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
 }
 
 /* ------------------------------------------------------------ *\
@@ -842,14 +710,6 @@ progress::-webkit-progress-bar {
   background-color: transparent;
 }
 
-.flat::-webkit-progress-value {
-  background-color: #51C9CC;
-}
-
-.flat::-moz-progress-bar {
-  background-color: #51C9CC;
-}
-
 .progress-container {
   width: 100%;
   background-color: transparent;
@@ -858,12 +718,6 @@ progress::-webkit-progress-bar {
   left: 0;
   height: .18em;
   display: block;
-}
-
-.progress-bar {
-  width: 50%;
-  display: block;
-  height: inherit;
 }
 
 /* ------------------------------------------------------------ *\
@@ -930,11 +784,6 @@ progress::-webkit-progress-bar {
 @media screen and (max-width: 768px) {
   #section-title {
     margin-bottom: 40px;
-  }
-
-  .schedule-content {
-    width: 100%;
-    height: 175vh;
   }
 
   img.tower {
