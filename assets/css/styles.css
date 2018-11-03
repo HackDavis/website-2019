@@ -328,7 +328,7 @@ button {
   border-style: none;
   border-color: initial;
   border-radius: 4px;
-  padding: 13px 20px;
+  padding: 10px 30px;
   text-transform: capitalize;
   cursor: pointer;
   transition: .5s;
@@ -360,8 +360,8 @@ p {
   justify-content: flex-start;
   padding: 33vh 0 33vh 10vw;
   background: #141E30;
-  background: -webkit-linear-gradient(-45deg, #141E30, #243B55, #141E30);
-  background: linear-gradient(-45deg, #141E30, #243B55, #141E30);
+  background: -webkit-linear-gradient(-45deg, #141E30, #3e6692, #141E30);
+  background: linear-gradient(-45deg, #141E30, #3e6692, #141E30);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
 	-moz-animation: Gradient 20s ease infinite;
@@ -448,11 +448,29 @@ h2.stats {
   font-size: 2.3em;
 }
 
-.list-features li {
-  border-left: 1px solid #7FFFD6;
-  border-right: 1px solid #7FFFD6;
+.list-features li{
   text-align: center;
   padding: 31px 0;
+}
+
+.list-features li:first-child {
+  border-left: 1px solid #7FFFD6;
+}
+
+.list-features li:nth-child(1) {
+  border-right: 1px solid #7FFFD6;
+}
+
+.list-features li:nth-child(2) {
+  border-right: 1px solid #7FFFD6;
+}
+
+.list-features li:nth-child(3) {
+  border-right: 1px solid #7FFFD6;
+}
+
+.list-features li:nth-child(4) {
+  border-right: 1px solid #7FFFD6;
 }
 
 .list-features li h2 small {
