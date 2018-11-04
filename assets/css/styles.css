@@ -271,7 +271,7 @@ span.underline {
 }
 
 .hack {
-  background: linear-gradient(45deg, #3E847C, #70F0D8);
+  background: linear-gradient(45deg, #3E847C, #15bfa0);
 }
 
 .health {
@@ -932,6 +932,14 @@ progress::-webkit-progress-bar {
 
   img.tower {
     display: none;
+  }
+
+  h1.social-good-text {
+    font-size: 1.7em;
+  }
+
+  h2.tracks-title {
+    font-size: 1.7em;
   }
 }
 
