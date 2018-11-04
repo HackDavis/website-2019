@@ -100,16 +100,3 @@ $('#scroll-to-top').click(function() {
     scrollTop : 0
   }, 500);
 });
-
-// copy email
-new ClipboardJS('.sponsor-us');
-var sponsorUsBtn = document.querySelector('.sponsor-us');
-
-sponsorUsBtn.addEventListener('click', () => {  
-  var clipboardCaption = document.querySelector('.clipboard-caption');
-  clipboardCaption.style.visibility = "visible";
-
-  window.setTimeout(() => {
-    clipboardCaption.style.visibility = "hidden";
-  }, 2000)
-});

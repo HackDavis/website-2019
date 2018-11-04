@@ -260,7 +260,7 @@ ul {
 
 span.underline {
   background-repeat: no-repeat;
-  background-size: 100% 0.7em;
+  background-size: 100% 0.6em;
   background-position: 0px 140%;
   border-radius: 1px;
   font-size: 1em;
@@ -423,15 +423,6 @@ button.sponsor-us:hover {
   opacity: 0.95;
   transform: translateY(46px);
   -webkit-transform: translateY(46px);
-}
-
-.clipboard-caption {
-  visibility: hidden;
-  transform: translateY(57px);
-  color: #7FFFD6;
-  font-family: inherit;
-  font-size: 13px;
-  opacity: 0.85;
 }
 
 .landing-picture {
@@ -754,10 +745,6 @@ p.tracks-des {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
-  -moz-transition: all 0.2s ease 0.15s;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
 }
 
 .accordion .content p {
