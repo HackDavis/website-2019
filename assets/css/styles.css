@@ -200,15 +200,9 @@ span.underline {
   background: linear-gradient(45deg, #007CFF, #6f22b9);
 }
 
-/* #mlh-trust-badge {
-  position: fixed;
-  top: 0;
-  left: 50px;
-  max-width: 100px;
-  width: 10%;
-  min-width: 60px;
-  display: block;
-} */
+#mlh-trust-badge {
+  position: absolute;
+}
 
 a:link, :visited, :hover, :active {
   text-decoration: none !important;
