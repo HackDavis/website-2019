@@ -114,110 +114,6 @@
   }
 }
 
-@-webkit-keyframes slideLeft {
-  0% {
-      -webkit-transform: translateX(-20px);
-      transform: translateX(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-      -webkit-transform: translateX(-20px);
-      transform: translateX(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes slideDown {
-  0% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes slideDown {
-  0% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes scaleIn {
-  0% {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes scaleIn {
-  0% {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1
-  }
-}
-
-@-webkit-keyframes slideUp {
-  0% {
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
-@keyframes slideUp {
-  0% {
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-      opacity: 0
-  }
-  100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1
-  }
-}
-
 /* ------------------------------------------------------------ *\
 	global
 \* ------------------------------------------------------------ */
@@ -232,7 +128,6 @@ body {
 }
 
 img {
-  /* image-rendering: optimizeQuality; */
   image-rendering: optimizeSpeed;
 }
 
@@ -271,30 +166,37 @@ span.underline {
 }
 
 .hack {
+  background: -webkit-linear-gradient(45deg, #3E847C, #15bfa0);
   background: linear-gradient(45deg, #3E847C, #15bfa0);
 }
 
 .health {
+  background: -webkit-linear-gradient(45deg, #9d316e, #FF8980);
   background: linear-gradient(45deg, #9d316e, #FF8980);
 }
 
 .environment {
-  background: linear-gradient(45deg, #89B338, #6B9823)
+  background: -webkit-linear-gradient(45deg, #89B338, #6B9823);
+  background: linear-gradient(45deg, #89B338, #6B9823);
 }
 
 .education {
+  background: -webkit-linear-gradient(45deg, #f8ae2c, #ee2d29);
 	background: linear-gradient(45deg, #f8ae2c, #ee2d29);
 }
 
 .schedule {
+  background: -webkit-linear-gradient(45deg, #f19872, #e86c9a);
   background: linear-gradient(45deg, #f19872, #e86c9a);
 }
 
 .faq {
-  background: linear-gradient(45deg, #0947db, #07d89d);
+  background: -webkit-linear-gradient(45deg, #4e4376, #2b5876);
+  background: linear-gradient(45deg, #4e4376, #2b5876);
 }
 
 .sponsors {
+  background: -webkit-linear-gradient(45deg, #007CFF, #6f22b9);
   background: linear-gradient(45deg, #007CFF, #6f22b9);
 }
 
@@ -327,13 +229,14 @@ button {
   -webkit-box-align: center;
   align-items: center;
   color: rgba(13, 52, 68, 0.7);
+  box-shadow: rgba(71, 53, 13, 0.2) 0px 3px 3px 0px !important;
   display: -webkit-inline-box;
   font-size: 15px;
   font-weight: 500;
   justify-content: center;
   border-width: initial;
   border-style: none;
-  border-color: initial;
+  border-color: transparent;
   border-radius: 4px;
   padding: 10px 25px;
   text-transform: capitalize;
@@ -365,7 +268,7 @@ p {
   -ms-flex-align: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 33vh 0 33vh 8vw;
+  padding: 34vh 4vw 39vh 8vw;
   background: #141E30;
   background: -webkit-linear-gradient(-45deg, #141E30, #3e6692, #141E30);
   background: linear-gradient(-45deg, #141E30, #3e6692, #141E30);
@@ -373,10 +276,6 @@ p {
   -webkit-animation: Gradient 20s ease infinite;
 	-moz-animation: Gradient 20s ease infinite;
 	animation: Gradient 20s ease infinite;
-  /* background-image: url(../img/tower.png);
-  background-size: cover;
-  background-position: center center;
-  height: calc(100% + 49px); */
 }
 
 img.hackdavis {
@@ -432,9 +331,9 @@ button.sponsor-us:hover {
 img.tower {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(2.1);
-  -ms-transform: scale(2.1);
-  transform: scale(2.1);
+  -webkit-transform: scale(2.8);
+  -ms-transform: scale(2.8);
+  transform: scale(2.8);
   animation: fadeIn .5s both;
   animation-delay: .85s;
   position: relative;
@@ -716,7 +615,6 @@ p.tracks-des {
 
 .accordion a.active {
   color: #fff;
-  opacity: .75;
   border-bottom: 1px solid #7FFFD6;
 }
 

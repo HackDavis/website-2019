@@ -32,8 +32,6 @@ $(document).ready(function(){
       percentage = (valueAttr/maxAttr) * 100;  
   });
 
-  // for the lulz
-  console.image('https://i.imgflip.com/2l6ai3.jpg');
   console.log('Apply at LINK_TO_APPLY')
 
   var getMax = function(){
