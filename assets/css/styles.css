@@ -155,10 +155,9 @@ ul {
 
 span.underline {
   background-repeat: no-repeat;
-  background-size: 100% 0.6em;
-  background-position: 0px 140%;
+  background-size: 100% 0.35em;
+  background-position: 0px 0.75em;
   border-radius: 1px;
-  font-size: 1em;
   font-weight: 700;
   -webkit-transition: background-size 0.25s ease-in;
   -o-transition: background-size 0.25s ease-in;
@@ -247,7 +246,7 @@ h2 {
 }
 
 p {
-  color: #fff;
+  color: #cbcaca;
 }
 
 /* ------------------------------------------------------------ *\
@@ -272,6 +271,12 @@ p {
 	animation: Gradient 20s ease infinite;
 }
 
+#hackdavis {
+  color: white;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
 img.hackdavis {
   width: 18em;
   height: auto;
@@ -279,7 +284,7 @@ img.hackdavis {
   animation-delay: .20s;
 }
 
-.details {
+.details:not(.event .details) {
   margin-top: 18px;
 }
 
@@ -408,7 +413,6 @@ p.about-text {
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: -webkit-left;
   text-align: left;
-  color: rgba(134, 142, 150, 1);
   max-width: 26em;
   margin-top: 28px;
   line-height: 1.5;
@@ -442,8 +446,7 @@ h2.tracks-title {
   line-height: 1.25;
   font-weight: 700;
   color: #fff;
-  display: flex;
-  justify-content: left;
+  text-align: left;
 }
 
 p.tracks-des {
@@ -451,7 +454,6 @@ p.tracks-des {
   margin-right: auto;
   margin-left: auto;
   font-size: 18px;
-  color: rgba(134, 142, 150, 1);
   line-height: 30px;
   text-align: -webkit-left;
   text-align: left;
@@ -488,15 +490,17 @@ p.tracks-des {
 	line-height: 40px;
 }
 
-#event {
+.event {
 	height: 55px;
 	width: 240px;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-#event > p {
+.event > p {
 	position: absolute;
 	-webkit-transform: translate(10px, -10px);
   -moz-transform: translate(10px, -10px);
@@ -504,11 +508,11 @@ p.tracks-des {
 	transform: translate(10px, -10px);
 }
 
-#time, #details {
+.time, .event .details {
 	display: inline-block;
 }
 
-#time {
+.time {
 	font-size: 35px;
 	font-weight: 800;
 	width: 40px;
@@ -517,7 +521,7 @@ p.tracks-des {
 	float: left;
 }
 
-#time-box {
+.time-box {
 	border-top: 2px solid #7FFFD6;
 	position: absolute;
 	width: 100px;
@@ -528,7 +532,7 @@ p.tracks-des {
 	transform: translate(-55px, -5px);
 }
 
-#time-box > p {
+.time-box > p {
 	position: absolute;
 	margin: 0 auto;
 	left: 0;
@@ -536,26 +540,21 @@ p.tracks-des {
 	font-weight: 800;
 }
 
-#details {
-	width: 200px;
-	float: left;
-}
-
-#event-title, #event-msg {
+.event-title, .event-msg {
 	float: left;
 	width: 200px;
 	text-align: left;
 	margin-left: 20px;
 }
 
-#event-title {
+.event-title {
 	font-weight: 800;
-	font-size: 17px;
+	font-size: 1em;
   line-height: 27px;
   text-transform: uppercase;
 }
 
-#event-msg {
+.event-msg {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -642,17 +641,17 @@ p.tracks-des {
 .accordion .content p {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(134, 142, 150, 0.9);
+  margin-bottom: 0;
 }
 
 .accordion .content.active {
   opacity: 1;
-  padding: 1rem;
+  padding: 1.25rem;
   max-height: 100%;
-  -moz-transition: all 0.35s ease 0.15s;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+  -moz-transition: opacity .35s cubic-bezier(.68,.8,.25,1) .10s, max-height 0.5s cubic-bezier(.22,.61,.36,1), padding-bottom 0.5s cubic-bezier(.22,.61,.36,1);
+  -webkit-transition: opacity .35s cubic-bezier(.68,.8,.25,1) .10s, max-height 0.5s cubic-bezier(.22,.61,.36,1), padding-bottom 0.5s cubic-bezier(.22,.61,.36,1);
+  -o-transition: opacity .35s cubic-bezier(.68,.8,.25,1) .10s, max-height 0.5s cubic-bezier(.22,.61,.36,1), padding-bottom 0.5s cubic-bezier(.22,.61,.36,1);
+  transition: opacity .35s cubic-bezier(.68,.8,.25,1) .10s, max-height 0.5s cubic-bezier(.22,.61,.36,1), padding-bottom 0.5s cubic-bezier(.22,.61,.36,1);
 }
 
 /* ------------------------------------------------------------ *\
