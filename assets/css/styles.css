@@ -110,7 +110,7 @@
       opacity: 0;
   }
   to {
-      opacity: 0.90;
+      opacity: .90;
   }
 }
 
@@ -155,14 +155,14 @@ ul {
 
 span.underline {
   background-repeat: no-repeat;
-  background-size: 100% 0.6em;
+  background-size: 100% .6em;
   background-position: 0px 140%;
   border-radius: 1px;
   font-size: 1em;
   font-weight: 700;
-  -webkit-transition: background-size 0.25s ease-in;
-  -o-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in;
+  -webkit-transition: background-size .25s ease-in;
+  -o-transition: background-size .25s ease-in;
+  transition: background-size .25s ease-in;
 }
 
 .hack {
@@ -210,7 +210,10 @@ span.underline {
   display: block;
 } */
 
-a:link, :visited, :hover, :active {
+a:link,
+:visited,
+:hover,
+:active {
   text-decoration: none !important;
   -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;
@@ -228,8 +231,8 @@ button {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   align-items: center;
-  color: rgba(13, 52, 68, 0.7);
-  box-shadow: rgba(71, 53, 13, 0.2) 0px 3px 3px 0px !important;
+  color: rgba(13, 52, 68, .7);
+  box-shadow: rgba(71, 53, 13, .2) 0px 3px 3px 0px !important;
   display: -webkit-inline-box;
   font-size: 15px;
   font-weight: 500;
@@ -304,7 +307,7 @@ button.get-notified {
 }
 
 button.get-notified:hover {
-  opacity: 0.95;
+  opacity: .95;
   transform: translateY(46px);
   -webkit-transform: translateY(46px);
 }
@@ -319,7 +322,7 @@ button.sponsor-us {
 }
 
 button.sponsor-us:hover {
-  opacity: 0.95;
+  opacity: .95;
   transform: translateY(46px);
   -webkit-transform: translateY(46px);
 }
@@ -383,7 +386,7 @@ h2.stats {
 }
 
 .list-features li h2 small {
-  font-size: 0.84em;
+  font-size: .84em;
   font-weight: 900;
 }
 
@@ -483,7 +486,7 @@ p.tracks-des {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 200;
   font-size: 20px;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   text-transform: uppercase;
 }
 
@@ -565,10 +568,10 @@ p.tracks-des {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(134, 142, 150, 0.95);
+  color: rgba(134, 142, 150, .95);
   line-height: 1.5px;
   margin-top: 3px;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
 }
 
 /******* faq *******/
@@ -586,7 +589,7 @@ p.tracks-des {
   text-align: left;
   text-align: -webkit-left;
   color: #fff;
-  opacity: 0.90;
+  opacity: .90;
 }
 
 .accordion a {
@@ -643,26 +646,26 @@ p.tracks-des {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
-  -moz-transition: all 0.1s ease 0.15s;	
-  -webkit-transition: all 0.1s ease 0.15s;	
-  -o-transition: all 0.1s ease 0.15s;	
-  transition: all 0.1s ease 0.15s;
+  -moz-transition: all .1s ease .15s;	
+  -webkit-transition: all .1s ease .15s;	
+  -o-transition: all .1s ease .15s;	
+  transition: all .1s ease .15s;
 }
 
 .accordion .content p {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(134, 142, 150, 0.9);
+  color: rgba(134, 142, 150, .9);
 }
 
 .accordion .content.active {
   opacity: 1;
   padding: 1rem;
   max-height: 100%;
-  -moz-transition: all 0.35s ease 0.15s;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+  -moz-transition: all .35s ease .15s;
+  -webkit-transition: all .35s ease .15s;
+  -o-transition: all .35s ease .15s;
+  transition: all .35s ease .15s;
 }
 
 /* ------------------------------------------------------------ *\
@@ -678,7 +681,7 @@ p.tracks-des {
   text-align: center;
   font-size: 1em;
   color: #fff;
-  opacity: 0.85;
+  opacity: .85;
 }
 
 /* ------------------------------------------------------------ *\
@@ -709,7 +712,7 @@ img.logo-picture {
 }
 
 #footer-content > a:hover {
-  opacity: 0.75;
+  opacity: .75;
 }
 
 div#copyright {
@@ -718,8 +721,8 @@ div#copyright {
 }
 
 #copyright > span {
-  color:rgba(249,250,252,0.75);
-  font-size: 0.9em;
+  color:rgba(249,250,252,.75);
+  font-size: .9em;
   font-weight: normal;
 }
 
@@ -777,7 +780,7 @@ progress::-webkit-progress-bar {
   bottom: 20px;
   right: 20px;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, .7);
   width: 50px;
   height: 50px;
   display: block;
@@ -786,11 +789,11 @@ progress::-webkit-progress-bar {
   -moz-border-radius: 35px;
   border-radius: 35px;
   display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 #scroll-to-top i{
@@ -800,15 +803,15 @@ progress::-webkit-progress-bar {
   left: 16px;
   top: 13px;
   font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 #scroll-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, .9);
 }
 
 /* ------------------------------------------------------------ *\
@@ -857,7 +860,7 @@ progress::-webkit-progress-bar {
   }
 
   span {
-    font-size: 0.7em;
+    font-size: .7em;
   }
 
   .list-features li:first-child {
