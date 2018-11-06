@@ -28,42 +28,56 @@
   font-family: "Graphik";
   font-weight: 100;
   font-style: normal;
-  src: url("/assets/fonts/Graphik-100-Thin.otf") format("otf")
+  src: url("/assets/fonts/Graphik-100-Thin.otf")
 }
 
 @font-face {
   font-family: "Graphik";
   font-weight: 300;
   font-style: light;
-  src: url("/assets/fonts/Graphik-300-Light.otf") format("otf")
+  src: url("/assets/fonts/Graphik-300-Light.otf"))
 }
 
 @font-face {
   font-family: "Graphik";
   font-weight: 400;
   font-style: normal;
-  src: url("/assets/fonts/Graphik-400-Regular.otf") format("otf")
+  src: url("/assets/fonts/Graphik-400-Regular.otf")
 }
 
 @font-face {
   font-family: "Graphik";
   font-weight: 500;
   font-style: medium;
-  src: url("/assets/fonts/Graphik-500-Medium.otf") format("otf")
+  src: url("/assets/fonts/Graphik-500-Medium.otf")
 }
 
 @font-face {
   font-family: "Graphik";
   font-weight: 700;
   font-style: bold;
-  src: url("/assets/fonts/Graphik-700-Bold.otf") format("otf")
+  src: url("/assets/fonts/Graphik-700-Bold.otf")
 }
 
 @font-face {
   font-family: "Graphik";
   font-weight: 900;
   font-style: bold;
-  src: url("/assets/fonts/Graphik-900-Super.otf") format("otf")
+  src: url("/assets/fonts/Graphik-900-Super.otf")
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/FuturaStd-Book.otf")
+}
+
+@font-face {
+  font-family: "Futura";
+  font-weight: 700;
+  font-style: bold;
+  src: url("/assets/fonts/FuturaStd-Heavy.otf")
 }
 
 /* ------------------------------------------------------------ *\
@@ -275,7 +289,7 @@ p {
 #hackdavis {
   color: white;
   font-size: 3em;
-  font-family: sans-serif;
+  font-family: "Futura";
 }
 
 img.hackdavis {
@@ -409,7 +423,7 @@ h1.social-good-text {
 }
 
 p.about-text {
-  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 18px;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -478,7 +492,7 @@ p.tracks-des {
 }
 
 .day-title {
-  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 200;
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -557,7 +571,7 @@ p.tracks-des {
 }
 
 .event-msg {
-  font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: rgba(134, 142, 150, 0.95);
