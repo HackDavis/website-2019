@@ -653,20 +653,12 @@ p.tracks-des {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
-  -moz-transition: all .1s ease .15s;	
-  -webkit-transition: all .1s ease .15s;	
-  -o-transition: all .1s ease .15s;	
-  transition: all .1s ease .15s;
 }
 
 .accordion .content p {
   font-size: 1rem;
   font-weight: 400;
-<<<<<<< HEAD
   margin-bottom: 0;
-=======
-  color: rgba(134, 142, 150, .9);
->>>>>>> 5ad533889834adda36075519ec48280aa7273802
 }
 
 .accordion .content.active {
