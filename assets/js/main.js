@@ -1,9 +1,9 @@
 // set typed
 var typed = new Typed('#typed', {
   strings: ['// code for social good'],
-  typeSpeed: 25,
+  typeSpeed: 30,
   backSpeed: 8,
-  backDelay: 1500,
+  backDelay: 3500,
   startDelay: 1000,
   fadeOut: false,
   loop: true,
@@ -16,6 +16,12 @@ const items = document.querySelectorAll('.accordion a');
 
 function toggleAccordion(){
   this.classList.toggle('active');
+  for(let item of items) {
+    if(item !== this) {
+      item.classList.remove('active');
+      item.nextElementSibling.classList.remove('active');
+    }
+  }
   this.nextElementSibling.classList.toggle('active');
 }
 
