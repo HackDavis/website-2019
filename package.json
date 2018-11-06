@@ -1,0 +1,30 @@
+{
+  "name": "website-2019",
+  "version": "1.0.0",
+  "description": "demo at [https://hackdavis.netlify.com](https://hackdavis.netlify.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackDavis/website-2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackDavis/website-2019/issues"
+  },
+  "homepage": "https://github.com/HackDavis/website-2019#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-easing-gradients": "^3.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-svg": "^2.4.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

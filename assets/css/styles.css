@@ -354,6 +354,7 @@ img.tower {
 h2.stats {
   font-weight: 900;
   font-size: 2.5em;
+  margin-bottom: 0;
 }
 
 .list-features li {
@@ -853,6 +854,12 @@ progress::-webkit-progress-bar {
     font-size: 0.7em;
   }
 
+  .sponsors-text {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 992px) {
   .list-features li:first-child {
     border-left: 1px solid #7FFFD6;
   }
@@ -876,12 +883,6 @@ progress::-webkit-progress-bar {
     border-left: 1px solid #7FFFD6;
     border-right: 1px solid #7FFFD6;
   }
-
-  .sponsors-text {
-    padding: 16px;
-  }
 }
-
-/* @media (min-width: 992px) {} */
 
 /* @media (min-width: 1200px) {} */

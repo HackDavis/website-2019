@@ -1,3 +1,4 @@
+import './scroll-entrance.min.js'
 // set typed
 var typed = new Typed('#typed', {
   strings: ['// code for social good'],
@@ -33,9 +34,9 @@ $(document).ready(function(){
   $('#progressBar').addClass('flat');
 
   $(document).on('scroll', function(){
-      maxAttr = $('#progressBar').attr('max');
-      valueAttr = $('#progressBar').attr('value');
-      percentage = (valueAttr/maxAttr) * 100;  
+      var maxAttr = $('#progressBar').attr('max');
+      var valueAttr = $('#progressBar').attr('value');
+      var percentage = (valueAttr/maxAttr) * 100;  
   });
 
   console.log('Apply at LINK_TO_APPLY')
