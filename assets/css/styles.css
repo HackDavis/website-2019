@@ -159,6 +159,7 @@ span.underline {
   background-position: 0px 0.75em;
   border-radius: 1px;
   font-weight: 700;
+  font-size: inherit;
   -webkit-transition: background-size 0.25s ease-in;
   -o-transition: background-size 0.25s ease-in;
   transition: background-size 0.25s ease-in;
