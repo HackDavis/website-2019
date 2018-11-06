@@ -643,6 +643,10 @@ p.tracks-des {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   clear: both;
+  -moz-transition: all 0.1s ease 0.15s;	
+  -webkit-transition: all 0.1s ease 0.15s;	
+  -o-transition: all 0.1s ease 0.15s;	
+  transition: all 0.1s ease 0.15s;
 }
 
 .accordion .content p {
@@ -826,13 +830,17 @@ progress::-webkit-progress-bar {
   h2.tracks-title {
     font-size: 1.7em;
   }
+
+  .accordion a {
+    width: 330px;
+  }
 }
 
-@media (min-width: 576px) {
-  /* .landing-picture {
+/* @media (min-width: 576px) {
+  .landing-picture {
     padding-right: 9vw;
-  } */
-}
+  }
+} */
 
 @media screen and (max-width: 768px) {
   #section-title {
@@ -845,14 +853,6 @@ progress::-webkit-progress-bar {
   }
 
   img.tower {
-    /* width: 100%;
-    height: auto;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    animation: fadeIn .5s both;
-    animation-delay: .85s;
-    position: relative; */
     display: none;
   }
 
