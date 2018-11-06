@@ -508,12 +508,10 @@ p.tracks-des {
 
 .event {
 	height: 55px;
-	width: 240px;
+	width: 270px;
 	margin: 0 auto;
 	text-align: center;
   padding-bottom: 20px;
-  display: flex;
-  align-items: center;
 }
 
 .event > p {
