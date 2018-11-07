@@ -244,6 +244,7 @@ button {
   display: -webkit-inline-box;
   font-size: 15px;
   font-weight: 500;
+  letter-spacing: 0.4px;
   justify-content: center;
   border-width: initial;
   border-style: none;
@@ -324,11 +325,21 @@ button.get-notified:hover {
 }
 
 button.sponsor-us {
+  white-space: nowrap;
+  word-break: keep-all;
+  user-select: none;
+  cursor: pointer;
+  color: #7fffd6;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #7fffd6;
   transform: translateY(50px);
   -webkit-transform: translateY(50px);
-  background: linear-gradient(45deg,#66e6d8 90%,#7fffd6);
   animation: fadeIn .5s both;
-  animation-delay: .50s;
+  animation-delay: .5s;
 }
 
 button.sponsor-us:hover {
