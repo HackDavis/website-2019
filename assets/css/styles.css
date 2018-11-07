@@ -310,8 +310,7 @@ img.hackdavis {
 button.get-notified {
   transform: translateY(50px);
   -webkit-transform: translateY(50px);
-  background-image: linear-gradient(90deg,#58DADA 0,#66E6D8 51%,#7FFFD6);
-  background-size: 200% auto;
+  background: linear-gradient(45deg,#66e6d8 90%,#7fffd6);
   margin: 0 15px 0 0;
   animation: fadeIn .5s both;
   animation-delay: .50s;
@@ -319,6 +318,7 @@ button.get-notified {
 
 button.get-notified:hover {
   opacity: .95;
+  box-shadow: rgba(71, 53, 13, 0.3) 0px 4px 8px 0px;
   transform: translateY(46px);
   -webkit-transform: translateY(46px);
 }
@@ -326,14 +326,14 @@ button.get-notified:hover {
 button.sponsor-us {
   transform: translateY(50px);
   -webkit-transform: translateY(50px);
-  background-image: linear-gradient(90deg,#58DADA 0,#66E6D8 51%,#7FFFD6);
-  background-size: 200% auto;
+  background: linear-gradient(45deg,#66e6d8 90%,#7fffd6);
   animation: fadeIn .5s both;
   animation-delay: .50s;
 }
 
 button.sponsor-us:hover {
   opacity: .95;
+  box-shadow: rgba(71, 53, 13, 0.3) 0px 4px 8px 0px;
   transform: translateY(46px);
   -webkit-transform: translateY(46px);
 }
