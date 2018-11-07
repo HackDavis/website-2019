@@ -303,10 +303,6 @@ img.hackdavis {
   animation-delay: .20s;
 }
 
-.details:not(.event .details) {
-  margin-top: 18px;
-}
-
 .typed-cursor {
   color: #7FFFD6;
 }
@@ -512,7 +508,7 @@ p.tracks-des {
 
 .event {
 	height: 55px;
-	width: 270px;
+	width: 250px;
 	margin: 0 auto;
 	text-align: center;
   padding-bottom: 20px;
@@ -540,7 +536,7 @@ p.tracks-des {
 }
 
 .time-box {
-	border-top: 2px solid #7FFFD6;
+	border-top: 1px solid #7FFFD6;
 	position: absolute;
 	width: 100px;
 	height: 30px;
@@ -561,10 +557,10 @@ p.tracks-des {
 .event-title {
 	font-weight: 500;
 	font-size: 1em;
-  line-height: 39px;
+  line-height: 30px;
   text-transform: uppercase;
   float: left;
-	width: 200px;
+	width: 170px;
 	text-align: left;
 	margin-left: 20px;
 }
