@@ -293,6 +293,7 @@ p {
   color: white;
   font-size: 3em;
   font-family: "Futura";
+  letter-spacing: 1.6px;
 }
 
 img.hackdavis {
@@ -370,7 +371,7 @@ img.tower {
 }
 
 h2.stats {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 2.5em;
   margin-bottom: 0;
 }
@@ -453,7 +454,7 @@ img.social-good {
 img.tracks-img {
   width: 23%;
   height: auto;
-  transform: translateX(-12px);
+  transform: translateX(-8px);
 }
 
 .tracks-picture {
@@ -490,13 +491,13 @@ p.tracks-des {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
-  padding: 15px 0 30px 0px;
+  padding: 15px 0 30px 10px;
   color: #fff;
 }
 
 .day-title {
   font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 20px;
   letter-spacing: .5px;
   text-transform: uppercase;
@@ -505,7 +506,7 @@ p.tracks-des {
 .day-date {
 	font-size: 45px;
 	padding-bottom: 20px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 40px;
 }
 
@@ -531,7 +532,7 @@ p.tracks-des {
 
 .time {
 	font-size: 35px;
-	font-weight: 800;
+	font-weight: 500;
 	width: 40px;
 	line-height: 40px;
 	height: 40px;
@@ -554,31 +555,18 @@ p.tracks-des {
 	margin: 0 auto;
 	left: 0;
 	top: 0;
-	font-weight: 800;
-}
-
-.event-title, .event-msg {
-	float: left;
-	width: 200px;
-	text-align: left;
-	margin-left: 20px;
+	font-weight: 500;
 }
 
 .event-title {
-	font-weight: 800;
+	font-weight: 500;
 	font-size: 1em;
-  line-height: 27px;
+  line-height: 39px;
   text-transform: uppercase;
-}
-
-.event-msg {
-  font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: rgba(134, 142, 150, .95);
-  line-height: 1.5px;
-  margin-top: 3px;
-  letter-spacing: .5px;
+  float: left;
+	width: 200px;
+	text-align: left;
+	margin-left: 20px;
 }
 
 /******* faq *******/
@@ -613,7 +601,7 @@ p.tracks-des {
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: 500;
   border-bottom: 1px solid #7FFFD6;
 }
 
