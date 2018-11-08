@@ -826,7 +826,7 @@ progress::-webkit-progress-bar {
 \* ------------------------------------------------------------ */
 @media screen and (max-width: 414px) {
   .landing-container {
-    padding: 46vh 0 25vh 8vw;
+    padding: 40vh 0px 25vh 8vw;
   }
 
   img.tower {
