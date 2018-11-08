@@ -373,6 +373,27 @@ img.tower {
   position: relative;
 }
 
+div.energy-break {
+  background-color: #56cdcf;
+  height: 3px;
+  margin: 0;
+  position: relative;
+}
+
+div.energy-break::before {
+  --circle-size: 20px;
+  position: absolute;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  left: 50%;
+  top: 50%;
+  margin-left: calc(-1 * var(--circle-size) / 2);
+  margin-top: calc(-1 * var(--circle-size) / 2);
+  border-radius: var(--circle-size);
+  background-color: #56cdcf;
+  content: "";
+}
+
 /******* stats *******/
 .stats-container {
   text-align: center;
