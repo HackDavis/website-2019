@@ -381,7 +381,7 @@ div.energy-break {
 }
 
 div.energy-break::before {
-  --circle-size: 20px;
+  --circle-size: 30px;
   position: absolute;
   width: var(--circle-size);
   height: var(--circle-size);
@@ -390,7 +390,8 @@ div.energy-break::before {
   margin-left: calc(-1 * var(--circle-size) / 2);
   margin-top: calc(-1 * var(--circle-size) / 2);
   border-radius: var(--circle-size);
-  background-color: #56cdcf;
+  background-color: #091822;
+  border: 3.5px solid #56cdcf;
   content: "";
 }
 
