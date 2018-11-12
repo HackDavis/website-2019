@@ -290,6 +290,10 @@ p {
 	animation: Gradient 20s ease infinite;
 }
 
+img.landing-logo {
+  width: 100px;
+}
+
 #hackdavis {
   color: white;
   font-size: 3em;
@@ -701,7 +705,8 @@ p.tracks-des {
 }
 
 img.logo-picture {
-  margin-top: -3rem;
+  margin-top: -80px;
+  margin-bottom: 40px;
   width: auto;
   height: 100px;
 }
