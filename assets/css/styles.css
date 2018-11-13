@@ -280,7 +280,6 @@ p {
   -ms-flex-align: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 34vh 4vw 39vh 8vw;
   background: #141E30;
   background: -webkit-linear-gradient(-45deg, #141E30, #3e6692, #141E30);
   background: linear-gradient(-45deg, #141E30, #3e6692, #141E30);
@@ -290,9 +289,23 @@ p {
 	animation: Gradient 20s ease infinite;
 }
 
+@media all and (min-width: 750px){
+  .landing-container {
+    padding: 34vh 4vw 41vh 8vw;    
+    transform: translateY(0px);
+  }
+}
+
+@media all and (max-width: 750px){
+  .landing-container {
+    padding: 4vh 4vw 8vh 8vw;
+    transform: translateY(0px);
+  }
+}
+
 #hackdavis {
   color: white;
-  font-size: 3em;
+  font-size: 3em;  
   font-family: "Futura";
   letter-spacing: 1.6px;
 }
@@ -386,6 +399,13 @@ img.tower {
   margin-right: auto;
 }
 
+@media all and (max-width: 750px){
+  .stats-content {
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
+
 h2.stats {
   font-weight: 700;
   font-size: 2.5em;
@@ -425,11 +445,11 @@ h2.stats {
 /******* about *******/
 .about-container {
   text-align: center;
-  background: #091822;
+  background: #091822;  
 }
 
 .about-content {
-  margin-top: 35px;
+  margin-top: 35px;  
 }
 
 h1.social-good-text {
@@ -452,6 +472,15 @@ p.about-text {
   max-width: 26em;
   margin-top: 28px;
   line-height: 1.5;
+}
+
+@media all and (max-width: 750px){
+  p.about-text {
+    font-size: 0.9em;    
+  }
+  #img-needs-offset {
+    margin-left: 5em;
+  }
 }
 
 img.social-good {
@@ -495,12 +524,29 @@ p.tracks-des {
   text-align: left;
 }
 
+@media all and (max-width: 750px){
+  img.tracks-img {
+    width: 30%;
+  }
+  p.tracks-des {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 32px;
+  }
+}
+
 /* ------------------------------------------------------------ *\
 	schedule
 \* ------------------------------------------------------------ */
 .schedule-container {
   text-align: center;
-  background-color: #091822;
+  background-color: #091822; 
+}
+
+@media all and (max-width: 750px) {
+  .schedule-container {
+    transform: translateY(-100px); 
+  }
 }
 
 .day {
