@@ -408,13 +408,6 @@ img.tower {
   margin-right: 0;
 }
 
-@media all and (max-width: 750px){
-  .stats-content {
-    margin-top: 0px;
-    padding: 0px;
-  }
-}
-
 h2.stats {
   font-weight: 700;
   font-size: 2.5em;
@@ -532,12 +525,6 @@ p.tracks-des {
   margin-left: auto;
   text-align: -webkit-left;
   text-align: left;
-}
-
-@media all and (max-width: 750px){
-  .tracks-container .row .readable-text-col:not(:last-child) p.tracks-des {
-    padding-bottom: 2rem;
-  }
 }
 
 /* ------------------------------------------------------------ *\
@@ -959,16 +946,15 @@ progress::-webkit-progress-bar {
     margin-bottom: 0.5rem;
   }
 
-  .tracks-header > .tracks-picture {
-    flex-grow: 0;
-  }
-
   img.tracks-img {
     transform: translate3d(-8px, 3px, 0);
   }
 
+  .tracks-container .row .readable-text-col:not(:last-child) p.tracks-des {
+    padding-bottom: 2rem;
+  }
+
   .tracks-header > .tracks-title {
-    flex-grow: 1;
     margin-bottom: 0;
   }
 
