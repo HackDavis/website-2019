@@ -508,6 +508,7 @@ img.tracks-img {
 .tracks-picture {
   display: flex;
   justify-content: left;
+  flex-direction: column;
   flex-grow: 0;
 }
 
@@ -944,10 +945,6 @@ progress::-webkit-progress-bar {
     display: flex;
     align-items: flex-end;
     margin-bottom: 0.5rem;
-  }
-
-  .tracks-picture {
-    display: inline-block;
   }
 
   img.tracks-img {
