@@ -387,6 +387,11 @@ img.tower {
   margin-right: auto;
 }
 
+.stats-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media all and (max-width: 750px){
   .stats-content {
     margin-top: 0px;
@@ -703,7 +708,8 @@ p.tracks-des {
 \* ------------------------------------------------------------ */
 .sponsors-container {
   text-align: center;
-  padding: 15vh 0 15vh 0;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   background-color: #091822;
 }
 
@@ -712,6 +718,9 @@ p.tracks-des {
   font-size: 1em;
   color: #fff;
   opacity: .85;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 67vw;
 }
 
 /* ------------------------------------------------------------ *\
@@ -864,8 +873,17 @@ progress::-webkit-progress-bar {
     font-size: 1.5em;
   }
 
-  .accordion a {
-    width: 330px;
+  section {
+    padding: 25px 20px 30px 25px;
+  }
+
+  .schedule-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .faq-content {
+    width: initial;
   }
 }
 
@@ -891,10 +909,6 @@ progress::-webkit-progress-bar {
 
   span {
     font-size: .7em;
-  }
-
-  .sponsors-text {
-    padding: 16px;
   }
 
   .social-good-left {
