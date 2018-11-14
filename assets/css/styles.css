@@ -288,7 +288,12 @@ p {
   -webkit-animation: Gradient 20s ease infinite;
 	-moz-animation: Gradient 20s ease infinite;
   animation: Gradient 20s ease infinite;
-  padding: 34vh 4vw 41vh 8vw;
+  padding: 25px 4vw 25px 8vw;
+  min-height: 100vh;
+}
+
+img.logo {
+  display: none;
 }
 
 #hackdavis {
@@ -310,8 +315,8 @@ img.hackdavis {
 }
 
 button.get-notified {
-  transform: translate3d(0, 50px, 0) rotate(0.0001deg);
-  -webkit-transform: translate3d(0, 50px, 0) rotate(0.0001deg);
+  transform: rotate(0.0001deg);
+  -webkit-transform: rotate(0.0001deg);
   background: linear-gradient(45deg,#66e6d8 90%,#7fffd6);
   margin: 0 15px 0 0;
   animation: fadeIn .5s both;
@@ -320,13 +325,14 @@ button.get-notified {
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
+  margin-top: 50px;
 }
 
 button.get-notified:hover {
   opacity: .95;
   box-shadow: rgba(71, 53, 13, 0.3) 0px 4px 8px 0px;
-  transform: translate3d(0, 45px, 0) rotate(0.0001deg);
-  -webkit-transform: translate3d(0, 45px, 0) rotate(0.0001deg);
+  transform: translate3d(0, -5px, 0) rotate(0.0001deg);
+  -webkit-transform: translate3d(0, -5px, 0) rotate(0.0001deg);
 
 }
 
@@ -342,33 +348,43 @@ button.sponsor-us {
   border-width: 1px;
   border-style: solid;
   border-color: #7fffd6;
-  transform: translate3d(0, 50px, 0) rotate(0.0001deg);
-  -webkit-transform: translate3d(0, 50px, 0) rotate(0.0001deg);
+  transform: rotate(0.0001deg);
+  -webkit-transform: rotate(0.0001deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
   animation: fadeIn .5s both;
   animation-delay: .5s;
+  margin-top: 50px;
 }
 
 button.sponsor-us:hover {
   opacity: .95;
   box-shadow: rgba(71, 53, 13, 0.3) 0px 4px 8px 0px;
   transform: translateY(45px) rotate(0.0001deg);
-  -webkit-transform: translateY(45px) rotate(0.0001deg);
+  -webkit-transform: translateY(-5px) rotate(0.0001deg);
 }
 
 .landing-picture {
-  padding-right: 9vw;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
 }
 
 img.tower {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(2.8);
-  -ms-transform: scale(2.8);
-  transform: scale(2.8);
+  -webkit-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  transform: scale(1.9);
+
+  -webkit-transform-origin : 70% 90%;
+  -moz-transform-origin : 70% 90%;
+  -o-transform-origin : 70% 90%;
+  -ms-transform-origin : 70% 90%;
+  transform-origin : 70% 90%;
+
   animation: fadeIn .5s both;
   animation-delay: .85s;
   position: relative;
@@ -857,9 +873,6 @@ progress::-webkit-progress-bar {
 	breakpoints
 \* ------------------------------------------------------------ */
 @media screen and (max-width: 414px) {
-  .landing-container {
-    padding: 40vh 0px 25vh 8vw;
-  }
 
   img.tower {
     display: none;
@@ -887,6 +900,20 @@ progress::-webkit-progress-bar {
   }
 }
 
+@media screen and (max-width: 492px) {
+
+   .landing-container {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+   }
+
+   .landing-left {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+   }
+}
+
 /* @media (min-width: 576px) {
   .landing-picture {
     padding-right: 9vw;
@@ -894,8 +921,19 @@ progress::-webkit-progress-bar {
 } */
 
 @media screen and (max-width: 768px) {
+
+  .landing-container {
+    padding-left: 3rem;
+  }
+
   .section-title {
     margin-bottom: 40px;
+  }
+
+  img.logo {
+    display: block;
+    width: 200px;
+    transform: translateX(-10px);
   }
 
   .schedule-content {
@@ -932,6 +970,10 @@ progress::-webkit-progress-bar {
   .tracks-header > .tracks-title {
     flex-grow: 1;
     margin-bottom: 0;
+  }
+
+  .accordion a {
+    font-size: 1rem;
   }
 }
 
