@@ -594,10 +594,10 @@ p.tracks-des {
 	position: absolute;
 	width: 100px;
 	height: 30px;
-	-webkit-transform: translate(-60px, -5px);
-  -moz-transform: translate(-60px, -5px);
-  -o-transform: translate(-60px, -5px);
-	transform: translate(-60px, -5px);
+	-webkit-transform: translate(-60px, 1px);
+  -moz-transform: translate(-60px, 1px);
+  -o-transform: translate(-60px, 1px);
+	transform: translate(-60px, 1px);
 }
 
 .time-box > p {
