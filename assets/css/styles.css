@@ -561,7 +561,7 @@ p.tracks-des {
 
 .event {
 	height: 55px;
-	width: 250px;
+	width: 15rem;
 	margin: 0 auto;
 	text-align: center;
   padding-bottom: 20px;
@@ -612,9 +612,9 @@ p.tracks-des {
   line-height: 30px;
   text-transform: uppercase;
   float: left;
-	width: 170px;
+	width: 10.625rem;
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 1.25rem;
 }
 
 /******* faq *******/
@@ -953,7 +953,7 @@ progress::-webkit-progress-bar {
     font-size: 1rem;
   }
 
-  .details {
+  .landing-container .details {
     padding-top: 15px;
   }
 }
