@@ -379,11 +379,11 @@ img.tower {
   -ms-transform: scale(1.9);
   transform: scale(1.9);
 
-  -webkit-transform-origin : 70% 16vw;
-  -moz-transform-origin : 70% 16vw;
-  -o-transform-origin : 70% 16vw;
-  -ms-transform-origin : 70% 16vw;
-  transform-origin : 70% 16vw;
+  -webkit-transform-origin : 70% 60%;
+  -moz-transform-origin : 70% 60%;
+  -o-transform-origin : 70% 60%;
+  -ms-transform-origin : 70% 60%;
+  transform-origin : 70% 60%;
 
   animation: fadeIn .5s both;
   animation-delay: .85s;
