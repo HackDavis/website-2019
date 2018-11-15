@@ -585,7 +585,8 @@ p.tracks-des {
 	width: 40px;
 	line-height: 40px;
 	height: 40px;
-	float: left;
+  float: left;
+  text-align: right;
 }
 
 .time-box {
@@ -593,10 +594,10 @@ p.tracks-des {
 	position: absolute;
 	width: 100px;
 	height: 30px;
-	-webkit-transform: translate(-55px, -5px);
-  -moz-transform: translate(-55px, -5px);
-  -o-transform: translate(-55px, -5px);
-	transform: translate(-55px, -5px);
+	-webkit-transform: translate(-60px, -5px);
+  -moz-transform: translate(-60px, -5px);
+  -o-transform: translate(-60px, -5px);
+	transform: translate(-60px, -5px);
 }
 
 .time-box > p {
