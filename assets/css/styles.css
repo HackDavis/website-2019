@@ -163,7 +163,7 @@ ul {
   text-transform: capitalize;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding-top: 35px;
   letter-spacing: -.025em;
 }
@@ -540,7 +540,7 @@ p.tracks-des {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
-  padding: 15px 0 30px 10px;
+  padding: 15px 0 0px 10px;
   color: #fff;
 }
 
@@ -915,7 +915,7 @@ progress::-webkit-progress-bar {
   }
 
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   img.logo {
@@ -955,6 +955,10 @@ progress::-webkit-progress-bar {
 
   .landing-container .details {
     padding-top: 15px;
+  }
+
+  .sponsors-container {
+    padding-top: 25px;
   }
 }
 
