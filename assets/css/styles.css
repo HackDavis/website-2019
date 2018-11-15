@@ -133,6 +133,7 @@
 \* ------------------------------------------------------------ */
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 body {
@@ -146,7 +147,7 @@ img {
 }
 
 section {
-  padding: 50px;
+  padding: 30px 50px 30px 50px;
 }
 
 ul {
@@ -154,16 +155,16 @@ ul {
   padding-left: 0px;
 }
 
-#section-title {
+.section-title {
   font-family: Graphik,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 2.6em;
+  font-size: 2.3em;
   font-weight: 700;
   color: #fff;
   text-transform: capitalize;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 50px;
-  padding-top: 10px;
+  margin-bottom: 25px;
+  padding-top: 35px;
   letter-spacing: -.025em;
 }
 
@@ -242,7 +243,7 @@ button {
   color: rgba(13, 52, 68, .7);
   box-shadow: rgba(71, 53, 13, .2) 0px 3px 3px 0px !important;
   display: -webkit-inline-box;
-  font-size: 15px;
+  font-size: 0.83rem;
   font-weight: 500;
   letter-spacing: 0.4px;
   justify-content: center;
@@ -280,19 +281,24 @@ p {
   -ms-flex-align: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 34vh 4vw 39vh 8vw;
   background: #141E30;
   background: -webkit-linear-gradient(-45deg, #141E30, #3e6692, #141E30);
   background: linear-gradient(-45deg, #141E30, #3e6692, #141E30);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
 	-moz-animation: Gradient 20s ease infinite;
-	animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+  padding: 25px 4vw 25px 8vw;
+  min-height: 100vh;
+}
+
+img.logo {
+  display: none;
 }
 
 #hackdavis {
   color: white;
-  font-size: 3em;
+  font-size: 3em;  
   font-family: "Futura";
   letter-spacing: 1.6px;
 }
@@ -309,8 +315,8 @@ img.hackdavis {
 }
 
 button.get-notified {
-  transform: translate3d(0, 50px, 0) rotate(0.0001deg);
-  -webkit-transform: translate3d(0, 50px, 0) rotate(0.0001deg);
+  transform: rotate(0.0001deg);
+  -webkit-transform: rotate(0.0001deg);
   background: linear-gradient(45deg,#66e6d8 90%,#7fffd6);
   margin: 0 15px 0 0;
   animation: fadeIn .5s both;
@@ -319,13 +325,14 @@ button.get-notified {
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
+  margin-top: 50px;
 }
 
 button.get-notified:hover {
   opacity: .95;
   box-shadow: rgba(71, 53, 13, 0.3) 0px 4px 8px 0px;
-  transform: translate3d(0, 45px, 0) rotate(0.0001deg);
-  -webkit-transform: translate3d(0, 45px, 0) rotate(0.0001deg);
+  transform: translate3d(0, -5px, 0) rotate(0.0001deg);
+  -webkit-transform: translate3d(0, -5px, 0) rotate(0.0001deg);
 
 }
 
@@ -341,33 +348,43 @@ button.sponsor-us {
   border-width: 1px;
   border-style: solid;
   border-color: #7fffd6;
-  transform: translate3d(0, 50px, 0) rotate(0.0001deg);
-  -webkit-transform: translate3d(0, 50px, 0) rotate(0.0001deg);
+  transform: rotate(0.0001deg);
+  -webkit-transform: rotate(0.0001deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
   animation: fadeIn .5s both;
   animation-delay: .5s;
+  margin-top: 50px;
 }
 
 button.sponsor-us:hover {
   opacity: .95;
   box-shadow: rgba(71, 53, 13, 0.3) 0px 4px 8px 0px;
   transform: translateY(45px) rotate(0.0001deg);
-  -webkit-transform: translateY(45px) rotate(0.0001deg);
+  -webkit-transform: translateY(-5px) rotate(0.0001deg);
 }
 
 .landing-picture {
-  padding-right: 9vw;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
 }
 
 img.tower {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(2.8);
-  -ms-transform: scale(2.8);
-  transform: scale(2.8);
+  -webkit-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  transform: scale(1.9);
+
+  -webkit-transform-origin : 70% 60%;
+  -moz-transform-origin : 70% 60%;
+  -o-transform-origin : 70% 60%;
+  -ms-transform-origin : 70% 60%;
+  transform-origin : 70% 60%;
+
   animation: fadeIn .5s both;
   animation-delay: .85s;
   position: relative;
@@ -386,9 +403,14 @@ img.tower {
   margin-right: auto;
 }
 
+.stats-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 h2.stats {
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2.22em;
   margin-bottom: 0;
 }
 
@@ -425,15 +447,27 @@ h2.stats {
 /******* about *******/
 .about-container {
   text-align: center;
-  background: #091822;
+  background: #091822;  
 }
 
 .about-content {
-  margin-top: 35px;
+  margin-top: 35px;  
+}
+
+.about-content .row, .tracks-container .row {
+  justify-content: space-evenly;
+}
+
+.readable-text-col {
+  max-width: 26em;
+}
+
+.social-good-right {
+  max-width: 20em;
 }
 
 h1.social-good-text {
-  font-size: 2.4em;
+  font-size: 2.13em;
   font-weight: 700;
   letter-spacing: -.025em;
   line-height: 1.1;
@@ -444,19 +478,17 @@ h1.social-good-text {
 
 p.about-text {
   font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 18px;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: -webkit-left;
   text-align: left;
-  max-width: 26em;
-  margin-top: 28px;
+  margin-top: 1.5rem;
   line-height: 1.5;
 }
 
 img.social-good {
-  width: 78%;
   height: auto;
+  width: 100%;
 }
 
 /* ------------------------------------------------------------ *\
@@ -468,7 +500,7 @@ img.social-good {
 }
 
 img.tracks-img {
-  width: 23%;
+  width: 3rem;
   height: auto;
   transform: translateX(-8px);
 }
@@ -476,10 +508,13 @@ img.tracks-img {
 .tracks-picture {
   display: flex;
   justify-content: left;
+  flex-direction: column;
+  flex-grow: 0;
 }
 
 h2.tracks-title {
   line-height: 1.25;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #fff;
   text-align: left;
@@ -489,8 +524,6 @@ p.tracks-des {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  font-size: 18px;
-  line-height: 30px;
   text-align: -webkit-left;
   text-align: left;
 }
@@ -500,27 +533,27 @@ p.tracks-des {
 \* ------------------------------------------------------------ */
 .schedule-container {
   text-align: center;
-  background-color: #091822;
+  background-color: #091822; 
 }
 
 .day {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
-  padding: 15px 0 30px 10px;
+  padding: 15px 0 0px 10px;
   color: #fff;
 }
 
 .day-title {
   font-family: "Graphik",Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.2rem;
   letter-spacing: .5px;
   text-transform: uppercase;
 }
 
 .day-date {
-	font-size: 45px;
+	font-size: 2.5rem;
 	padding-bottom: 20px;
 	font-weight: 700;
 	line-height: 40px;
@@ -528,7 +561,7 @@ p.tracks-des {
 
 .event {
 	height: 55px;
-	width: 250px;
+	width: 15rem;
 	margin: 0 auto;
 	text-align: center;
   padding-bottom: 20px;
@@ -547,12 +580,13 @@ p.tracks-des {
 }
 
 .time {
-	font-size: 35px;
+	font-size: 1.94rem;
 	font-weight: 500;
 	width: 40px;
 	line-height: 40px;
 	height: 40px;
-	float: left;
+  float: left;
+  text-align: right;
 }
 
 .time-box {
@@ -560,10 +594,10 @@ p.tracks-des {
 	position: absolute;
 	width: 100px;
 	height: 30px;
-	-webkit-transform: translate(-55px, -5px);
-  -moz-transform: translate(-55px, -5px);
-  -o-transform: translate(-55px, -5px);
-	transform: translate(-55px, -5px);
+	-webkit-transform: translate(-60px, 1px);
+  -moz-transform: translate(-60px, 1px);
+  -o-transform: translate(-60px, 1px);
+	transform: translate(-60px, 1px);
 }
 
 .time-box > p {
@@ -576,13 +610,12 @@ p.tracks-des {
 
 .event-title {
 	font-weight: 500;
-	font-size: 1em;
   line-height: 30px;
   text-transform: uppercase;
   float: left;
-	width: 170px;
+	width: 10.625rem;
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 1.25rem;
 }
 
 /******* faq *******/
@@ -680,7 +713,8 @@ p.tracks-des {
 \* ------------------------------------------------------------ */
 .sponsors-container {
   text-align: center;
-  padding: 15vh 0 15vh 0;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   background-color: #091822;
 }
 
@@ -689,6 +723,9 @@ p.tracks-des {
   font-size: 1em;
   color: #fff;
   opacity: .85;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 67vw;
 }
 
 /* ------------------------------------------------------------ *\
@@ -825,9 +862,6 @@ progress::-webkit-progress-bar {
 	breakpoints
 \* ------------------------------------------------------------ */
 @media screen and (max-width: 414px) {
-  .landing-container {
-    padding: 40vh 0px 25vh 8vw;
-  }
 
   img.tower {
     display: none;
@@ -838,12 +872,35 @@ progress::-webkit-progress-bar {
   }
 
   h2.tracks-title {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
-  .accordion a {
-    width: 330px;
+  section {
+    padding: 25px 20px 30px 25px;
   }
+
+  .schedule-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .faq-content {
+    width: initial;
+  }
+}
+
+@media screen and (max-width: 492px) {
+
+   .landing-container {
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+   }
+
+   .landing-left {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+   }
 }
 
 /* @media (min-width: 576px) {
@@ -853,8 +910,19 @@ progress::-webkit-progress-bar {
 } */
 
 @media screen and (max-width: 768px) {
-  #section-title {
-    margin-bottom: 40px;
+
+  .landing-container {
+    padding-left: 3rem;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  img.logo {
+    display: block;
+    width: 200px;
+    transform: translateX(-10px);
   }
 
   .schedule-content {
@@ -870,12 +938,41 @@ progress::-webkit-progress-bar {
     font-size: .7em;
   }
 
-  .sponsors-text {
-    padding: 16px;
+  .social-good-left {
+    margin-bottom: 2.5rem;
+  }
+
+  img.tracks-img {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  .tracks-container .row .readable-text-col:not(:last-child) p.tracks-des {
+    padding-bottom: 2rem;
+  }
+
+  .accordion a {
+    font-size: 1rem;
+  }
+
+  .landing-container .details {
+    padding-top: 15px;
+  }
+
+  .sponsors-container {
+    padding-top: 25px;
+  }
+}
+
+@media(max-width: 576px) {
+  html {
+    font-size: 14px !important;
   }
 }
 
 @media (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
   .list-features li:first-child {
     border-left: 1px solid #7FFFD6;
   }

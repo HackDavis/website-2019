@@ -67,23 +67,26 @@
       <div class="progress-container"></div>
     </progress>
 
-    <section class="landing-container" id="landing">
+    <section class="landing-container justify-content-center" id="landing">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-7">
-            <h1 id="hackdavis">HACK<b>DAVIS</b></h1>
-            <div class="details">
-              <code class="facts" id="typed" style="animation: fadeIn .5s both;animation-delay: .30s;"></code>
-              <code class="facts" style="animation: fadeIn .5s both;animation-delay: .35s;"><br><br>February 9-10, 2019</code>
-              <code class="facts" style="animation: fadeIn .5s both;animation-delay: 0.45s;"><br>The Pavilion at UC Davis</code>
-              <div>
-                <a href="https://hackdavis.us19.list-manage.com/subscribe/post?u=31b1ac38598fc40775d40347e&id=cb5474d7a8" target="_blank" rel="noopener noreferrer">
-                  <button class="get-notified">get notified</button>
-                </a>
-                <a href="mailto:team@hackdavis.io" rel="noopener noreferrer">
-                  <button class="sponsor-us">sponsor us</button>
-                </a>
+          <div class="col-md-7 landing-left">
+            <img class="logo" src="assets/img/logo.png" />
+            <div>
+              <h1 id="hackdavis">HACK<b>DAVIS</b></h1>
+              <div class="details">
+                <code class="facts" id="typed" style="animation: fadeIn .5s both;animation-delay: .30s;"></code>
+                <code class="facts" style="animation: fadeIn .5s both;animation-delay: .35s;"><br><br>February 9-10, 2019</code>
+                <code class="facts" style="animation: fadeIn .5s both;animation-delay: 0.45s;"><br>The Pavilion at UC Davis</code>
               </div>
+            </div>
+            <div>
+              <a href="https://hackdavis.us19.list-manage.com/subscribe/post?u=31b1ac38598fc40775d40347e&id=cb5474d7a8" target="_blank" rel="noopener noreferrer">
+                <button class="get-notified">get notified</button>
+              </a>
+              <a href="mailto:team@hackdavis.io" rel="noopener noreferrer">
+                <button class="sponsor-us">sponsor us</button>
+              </a>
             </div>
           </div>
           <div class="col-md-4">
@@ -121,7 +124,7 @@
     <section class="about-container">
       <div class="container about-content" data-entrance="fade" data-entrance-delay="300">
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-7 readable-text-col social-good-left">
             <h1 class="social-good-text" data-entrance="fade">
               <span class="underline hack">Hack for Social Good</span>
             </h1>
@@ -134,11 +137,9 @@
               On February 9-10, over 700 students, hackers, and creators will come together for 24 hours of hacking. 
               For the 4th year in a row, we are bringing the most talented students in California to address the world’s most pressing issues. 
             </p>
-          </div>
-          <div class="col-md-5">
-            <div class="tracks-picture center">
-              <img src="assets/img/v3-social-good-small.png" alt="social-good" class="social-good">
-            </div>
+          </div>          
+          <div class="col-md-5 social-good-right">
+            <img src="assets/img/v3-social-good-small.png" alt="social-good" class="social-good">
           </div>
         </div>
       </div>
@@ -147,35 +148,41 @@
     <section class="tracks-container">
       <div class="container">
         <div class="row">
-          <div class="col-md-4" data-entrance="fade" data-entrance-delay="100">
-            <div class="tracks-picture center">
-              <img src="assets/img/heart.svg" alt="heart" class="tracks-img">
+          <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="100">
+            <div class="tracks-header">
+              <div class="tracks-picture">
+                <img src="assets/img/heart.svg" alt="heart" class="tracks-img">
+              </div>
+              <h2 class="tracks-title">
+                <span class="underline health">Health</span>
+              </h2>
             </div>
-            <h2 class="tracks-title">
-              <span class="underline health">Health</span>
-            </h2>
             <p class="tracks-des">
               Develop a product that encourages people to live a healthier lifestyle. Help predict and prevent illnesses before they affect the body.
             </p>
           </div>
-          <div class="col-md-4" data-entrance="fade" data-entrance-delay="200">
-            <div class="tracks-picture center">
-              <img src="assets/img/plant.svg" alt="plant" class="tracks-img">
+          <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="200">
+            <div class="tracks-header">
+              <div class="tracks-picture">
+                <img src="assets/img/plant.svg" alt="plant" class="tracks-img">
+              </div>
+              <h2 class="tracks-title">
+                <span class="underline environment">Environment</span>
+              </h2>
             </div>
-            <h2 class="tracks-title">
-              <span class="underline environment">Environment</span>
-            </h2>
             <p class="tracks-des">
                 Aggregate public data to analyze or improve government green energy policies. Design solutions to reduce energy consumption in habitable spaces.
             </p>
           </div>
-          <div class="col-md-4" data-entrance="fade" data-entrance-delay="300">
-            <div class="tracks-picture center">
-              <img src="assets/img/book.svg" alt="book" class="tracks-img">
+          <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="300">
+            <div class="tracks-header">
+              <div class="tracks-picture">
+                <img src="assets/img/book.svg" alt="book" class="tracks-img">
+              </div>
+              <h2 class="tracks-title">
+                <span class="underline education">Education</span>
+              </h2>
             </div>
-            <h2 class="tracks-title">
-              <span class="underline education">Education</span>
-            </h2>
             <p class="tracks-des">
                 Discover new ways to faciliatate learning within the classroom. Enable accessible education for individuals with learning disabilities.
             </p>
@@ -185,7 +192,7 @@
     </section>
 
     <section class="schedule-container">
-      <p id="section-title" data-entrance="fade">
+      <p class="section-title" data-entrance="fade">
         <span class="underline schedule">schedule</span>
       </p>
       <div class="container">
@@ -339,7 +346,8 @@
     </section>
 
     <section class="faq-container">
-      <p id="section-title" data-entrance="fade">
+    <div class="container">
+      <p class="section-title" data-entrance="fade">
         <span class="underline faq">FAQ</span>
       </p>
       <div class="faq-content center">
@@ -417,13 +425,16 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="sponsors-container">
-      <p id="section-title" data-entrance="fade">
-        <span class="underline sponsors">sponsors</span>
-      </p>
-      <p class="sponsors-text" data-entrance="fade">If you're interested in sponsoring us, please contact us at <a href="mailto:team@hackdavis.io">team@hackdavis.io</a></p>
+      <div class="container">
+        <p class="section-title" data-entrance="fade">
+          <span class="underline sponsors">sponsors</span>
+        </p>
+        <p class="sponsors-text" data-entrance="fade">If you're interested in sponsoring us, please contact us at <a href="mailto:team@hackdavis.io">team@hackdavis.io</a></p>
+      </div>
     </section>
 
     <section class="contact-container">
