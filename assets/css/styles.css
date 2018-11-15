@@ -410,7 +410,7 @@ img.tower {
 
 h2.stats {
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2.22em;
   margin-bottom: 0;
 }
 
@@ -961,6 +961,18 @@ progress::-webkit-progress-bar {
 
   .accordion a {
     font-size: 1rem;
+  }
+}
+
+@media(max-width: 576px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media(min-width: 768px) {
+  .tracks-header {
+    display: block;
   }
 }
 
