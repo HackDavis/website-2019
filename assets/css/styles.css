@@ -941,12 +941,6 @@ progress::-webkit-progress-bar {
     margin-bottom: 2.5rem;
   }
 
-  .tracks-header {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 0.5rem;
-  }
-
   img.tracks-img {
     transform: translate3d(-8px, 3px, 0);
   }
@@ -955,24 +949,18 @@ progress::-webkit-progress-bar {
     padding-bottom: 2rem;
   }
 
-  .tracks-header > .tracks-title {
-    margin-bottom: 0;
-  }
-
   .accordion a {
     font-size: 1rem;
+  }
+
+  .details {
+    padding-top: 15px;
   }
 }
 
 @media(max-width: 576px) {
   html {
     font-size: 14px !important;
-  }
-}
-
-@media(min-width: 768px) {
-  .tracks-header {
-    display: block;
   }
 }
 
