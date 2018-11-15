@@ -942,7 +942,7 @@ progress::-webkit-progress-bar {
   }
 
   img.tracks-img {
-    transform: translate3d(-8px, 3px, 0);
+    transform: translate3d(-8px, 0, 0);
   }
 
   .tracks-container .row .readable-text-col:not(:last-child) p.tracks-des {
