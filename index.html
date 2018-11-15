@@ -30,6 +30,15 @@
     <meta name="theme-color" content="#091822">
     <meta name="apple-mobile-web-app-status-bar-style" content="#091822">
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        if (navigator.userAgent.indexOf('Safari') != -1 
+            && navigator.userAgent.indexOf('Chrome') == -1) {
+            let illustration = document.getElementById("landing-illustration");
+            illustration.setAttribute("src", "assets/img/v6-tower.png")
+        }
+      });
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109906061-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -93,7 +102,7 @@
           </div>
           <div class="col-md-4">
             <div class="landing-picture">
-              <img src="assets/img/v6-tower.png" alt="tower" class="tower">
+              <img id="landing-illustration" src="assets/img/v6-tower.svg" alt="tower" class="tower">
             </div>
           </div>
         </div>
