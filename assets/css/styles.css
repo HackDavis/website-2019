@@ -292,8 +292,11 @@ p {
   min-height: 100vh;
 }
 
-img.logo {
-  display: none;
+.title {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
 }
 
 #hackdavis {
@@ -301,6 +304,7 @@ img.logo {
   font-size: 3em;  
   font-family: "Futura";
   letter-spacing: 1.6px;
+  margin-bottom: 0;
 }
 
 img.hackdavis {
@@ -372,12 +376,12 @@ button.sponsor-us:hover {
   height: 100%;
 }
 
-img.tower {
+.tower {
   width: 100%;
   height: auto;
-  -webkit-transform: scale(1.9);
-  -ms-transform: scale(1.9);
-  transform: scale(1.9);
+  -webkit-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  transform: scale(1.8);
 
   -webkit-transform-origin : 70% 60%;
   -moz-transform-origin : 70% 60%;
@@ -863,7 +867,7 @@ progress::-webkit-progress-bar {
 \* ------------------------------------------------------------ */
 @media screen and (max-width: 414px) {
 
-  img.tower {
+  .tower {
     display: none;
   }
 
@@ -909,7 +913,24 @@ progress::-webkit-progress-bar {
   }
 } */
 
+@media(min-width: 768px) {
+  
+  img.landing-logo {
+    width: 5rem;
+  }
+
+  #hackdavis {
+    font-size: 2.7rem;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
+
+  .title {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .landing-container {
     padding-left: 3rem;
@@ -930,7 +951,7 @@ progress::-webkit-progress-bar {
     height: 175vh;
   }
 
-  img.tower {
+  .tower {
     display: none;
   }
 

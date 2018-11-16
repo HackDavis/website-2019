@@ -30,6 +30,15 @@
     <meta name="theme-color" content="#091822">
     <meta name="apple-mobile-web-app-status-bar-style" content="#091822">
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        if (navigator.userAgent.indexOf('Safari') != -1 
+            && navigator.userAgent.indexOf('Chrome') == -1) {
+            let illustration = document.getElementById("landing-illustration");
+            illustration.setAttribute("src", "assets/img/v6-tower.png")
+        }
+      });
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109906061-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -71,9 +80,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-7 landing-left">
-            <img class="logo" src="assets/img/logo.png" />
             <div>
-              <h1 id="hackdavis">HACK<b>DAVIS</b></h1>
+              <div class="title">
+                <img class="logo landing-logo" src="assets/img/logo-small.png" />
+                <h1 id="hackdavis">HACK<b>DAVIS</b></h1>
+              </div>
               <div class="details">
                 <code class="facts" id="typed" style="animation: fadeIn .5s both;animation-delay: .30s;"></code>
                 <code class="facts" style="animation: fadeIn .5s both;animation-delay: .35s;"><br><br>February 9-10, 2019</code>
@@ -91,7 +102,7 @@
           </div>
           <div class="col-md-4">
             <div class="landing-picture">
-              <img src="assets/img/v4-tower.svg" alt="tower" class="tower">
+              <img id="landing-illustration" src="assets/img/v6-tower.svg" alt="tower" class="tower">
             </div>
           </div>
         </div>
@@ -438,7 +449,7 @@
     </section>
 
     <section class="contact-container">
-      <img src="assets/img/logo.png" alt="logo" class="logo-picture">
+      <img src="assets/img/logo-small.png" alt="logo" class="logo-picture">
       <div id="footer-content">
         <a href="mailto:team@hackdavis.io">
           <i class="fa fa-envelope fa-sm" aria-hidden="true"></i>
