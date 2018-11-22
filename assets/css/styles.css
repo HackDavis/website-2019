@@ -598,10 +598,10 @@ p.tracks-des {
 	position: absolute;
 	width: 100px;
 	height: 30px;
-	-webkit-transform: translate(-60px, 1px);
-  -moz-transform: translate(-60px, 1px);
-  -o-transform: translate(-60px, 1px);
-	transform: translate(-60px, 1px);
+	-webkit-transform: translate(-60px, -4px);
+  -moz-transform: translate(-60px, -4px);
+  -o-transform: translate(-60px, -4px);
+	transform: translate(-60px, -4px);
 }
 
 .time-box > p {
@@ -866,7 +866,6 @@ progress::-webkit-progress-bar {
 	breakpoints
 \* ------------------------------------------------------------ */
 @media screen and (max-width: 414px) {
-
   .tower {
     display: none;
   }
@@ -888,13 +887,19 @@ progress::-webkit-progress-bar {
     padding-right: 50px;
   }
 
+  .time-box {
+    -webkit-transform: translate(-60px, 2px);
+    -moz-transform: translate(-60px, 2px);
+    -o-transform: translate(-60px, 2px);
+    transform: translate(-60px, 2px);
+  }
+
   .faq-content {
     width: initial;
   }
 }
 
 @media screen and (max-width: 492px) {
-
    .landing-container {
      padding-left: 0 !important;
      padding-right: 0 !important;
@@ -907,14 +912,7 @@ progress::-webkit-progress-bar {
    }
 }
 
-/* @media (min-width: 576px) {
-  .landing-picture {
-    padding-right: 9vw;
-  }
-} */
-
 @media(min-width: 768px) {
-  
   img.landing-logo {
     width: 8rem;
   }
@@ -922,11 +920,9 @@ progress::-webkit-progress-bar {
   #hackdavis {
     font-size: 2.7rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   .title {
     flex-direction: column;
     align-items: center;
@@ -1018,5 +1014,3 @@ progress::-webkit-progress-bar {
     border-right: 1px solid #7FFFD6;
   }
 }
-
-/* @media (min-width: 1200px) {} */
