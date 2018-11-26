@@ -640,7 +640,7 @@ p.tracks-des {
   opacity: .90;
 }
 
-.accordion a {
+.accordion a.question {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -661,7 +661,6 @@ p.tracks-des {
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
-  color: #fff;
 }
 
 .accordion a.active {

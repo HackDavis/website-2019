@@ -13,7 +13,7 @@ var typed = new Typed('#typed', {
 });
 
 // faq toggle
-const items = document.querySelectorAll('.accordion a');
+const items = document.querySelectorAll('.accordion a.question');
 
 function toggleAccordion(){
   this.classList.toggle('active');
