@@ -390,7 +390,7 @@ button.sponsor-us:hover {
   transform-origin : 70% 60%;
 
   animation: fadeIn .5s both;
-  animation-delay: .85s;
+  animation-delay: .5s;
   position: relative;
 }
 
