@@ -39,7 +39,7 @@ $(document).ready(function(){
       var percentage = (valueAttr/maxAttr) * 100;  
   });
 
-  console.log('Apply at LINK_TO_APPLY')
+  console.log('Apply at https://hackdavis.typeform.com/to/taNO32')
 
   var getMax = function(){
     return $(document).height() - $(window).height();
