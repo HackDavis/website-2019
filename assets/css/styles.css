@@ -318,6 +318,25 @@ img.hackdavis {
   color: #7FFFD6;
 }
 
+#apply-button {
+  position: relative;
+}
+
+#apply-hint {
+  position: absolute;
+  top: -3em;
+  font-size: 12px;
+  width: 15em;
+  left: 0;
+  color: #7FFFD6;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}
+
+#apply-button:hover #apply-hint {
+  opacity: 1;
+}
+
 button.get-notified {
   transform: rotate(0.0001deg);
   -webkit-transform: rotate(0.0001deg);
@@ -668,7 +687,7 @@ p.tracks-des {
   border-bottom: 1px solid #7FFFD6;
 }
 
-.accordion a::after {
+.accordion a.question::after {
   content: url(../img/down.svg);
   position: absolute;
   float: right;
