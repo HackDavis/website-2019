@@ -893,6 +893,10 @@ progress::-webkit-progress-bar {
     display: none;
   }
 
+  h2.stats {
+    font-size: 1.7em;
+  }
+
   h1.social-good-text {
     font-size: 1.7em;
   }
