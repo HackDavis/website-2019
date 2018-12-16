@@ -66,20 +66,6 @@
   src: url("/assets/fonts/Graphik-900-Super.otf")
 }
 
-@font-face {
-  font-family: "Futura";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/assets/fonts/FuturaStd-Book.otf")
-}
-
-@font-face {
-  font-family: "Futura";
-  font-weight: 700;
-  font-style: bold;
-  src: url("/assets/fonts/FuturaStd-Heavy.otf")
-}
-
 /* ------------------------------------------------------------ *\
 	keyframes
 \* ------------------------------------------------------------ */
