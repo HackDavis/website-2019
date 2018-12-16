@@ -307,6 +307,10 @@ p {
   margin-bottom: 0;
 }
 
+img.landing-logo {
+  margin-bottom: 20px;
+}
+
 img.hackdavis {
   width: 18em;
   height: auto;
@@ -953,7 +957,7 @@ progress::-webkit-progress-bar {
 
   img.logo {
     display: block;
-    width: 200px;
+    width: 12rem;
     transform: translateX(-10px);
   }
 
