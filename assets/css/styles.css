@@ -302,9 +302,18 @@ p {
 #hackdavis {
   color: white;
   font-size: 3em;  
-  font-family: "Futura";
+  font-weight: 300;
+  font-family: Avenir, Pier Regular, sans-serif;
   letter-spacing: 1.6px;
   margin-bottom: 0;
+}
+
+#hackdavis > span {
+  padding: 0;
+}
+
+.extra-bold {
+  font-weight: 900;
 }
 
 img.landing-logo {
