@@ -650,7 +650,7 @@ p.tracks-des {
 
 .faq-content {
   margin: 0 auto;
-  width: 62vw;
+  max-width: 45em;
 }
 
 .accordion-item {
@@ -911,10 +911,6 @@ progress::-webkit-progress-bar {
     -moz-transform: translate(-60px, 2px);
     -o-transform: translate(-60px, 2px);
     transform: translate(-60px, 2px);
-  }
-
-  .faq-content {
-    width: initial;
   }
 }
 
