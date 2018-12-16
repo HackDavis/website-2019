@@ -941,7 +941,8 @@ progress::-webkit-progress-bar {
   }
 
   .landing-container {
-    padding-left: 3rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .section-title {
