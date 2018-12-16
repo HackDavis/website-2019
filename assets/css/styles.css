@@ -433,13 +433,14 @@ button.sponsor-us:hover {
 
 h2.stats {
   font-weight: 700;
-  font-size: 2.22em;
+  font-size: 2em;
   margin-bottom: 0;
 }
 
 .list-features li {
   text-align: center;
-  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .list-features li:first-child {
