@@ -439,7 +439,8 @@ h2.stats {
 
 .list-features li {
   text-align: center;
-  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .list-features li:first-child {
@@ -886,6 +887,10 @@ progress::-webkit-progress-bar {
 @media screen and (max-width: 414px) {
   .tower {
     display: none;
+  }
+
+  h2.stats {
+    font-size: 1.5em;
   }
 
   h1.social-good-text {
