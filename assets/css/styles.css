@@ -993,6 +993,10 @@ progress::-webkit-progress-bar {
     padding-top: 15px;
   }
 
+  .details {
+    text-align: center;
+  }
+
   .sponsors-container {
     padding-top: 25px;
   }
