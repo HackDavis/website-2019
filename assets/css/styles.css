@@ -391,7 +391,7 @@ button.sponsor-us:hover {
 
 .landing-picture {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   height: 100%;
 }
 
@@ -917,19 +917,6 @@ progress::-webkit-progress-bar {
   }
 }
 
-@media screen and (max-width: 492px) {
-   .landing-container {
-     padding-left: 0 !important;
-     padding-right: 0 !important;
-   }
-
-   .landing-left {
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-   }
-}
-
 @media(min-width: 768px) {
   img.landing-logo {
     width: 8rem;
@@ -947,7 +934,14 @@ progress::-webkit-progress-bar {
   }
 
   .landing-container {
-    padding-left: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .landing-left {
+     flex-direction: column;
+     display: flex;
+     align-items: center;
   }
 
   .section-title {
