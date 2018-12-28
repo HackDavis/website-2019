@@ -14,6 +14,7 @@
 - progress indicator
 - scroll to top
 - breakpoints
+- sponsor images
 
 *******/
 
@@ -1012,4 +1013,33 @@ progress::-webkit-progress-bar {
     border-left: 1px solid #7FFFD6;
     border-right: 1px solid #7FFFD6;
   }
+}
+
+/* ------------------------------------------------------------ *\
+  sponsor images
+\* ------------------------------------------------------------ */
+
+
+img.diamond-sponsor {  
+  max-height: 250px;  
+  width: auto;
+  margin-bottom: 3em;
+}
+
+img.gold-sponsor {  
+  max-height: 125px;  
+  width: auto;
+  margin-bottom: 3em;
+}
+
+img.silver-sponsor {  
+  max-height: 75px;  
+  width: auto;
+  margin-bottom: 3em;
+}
+
+img.bronze-sponsor {  
+  max-height: 40px;  
+  width: auto;
+  margin-bottom: 3em;
 }
