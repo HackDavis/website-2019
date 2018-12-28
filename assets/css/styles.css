@@ -732,6 +732,43 @@ p.tracks-des {
   max-width: 67vw;
 }
 
+.sponsors-link {
+  display: block;
+}
+
+/* ------------------------------------------------------------ *\
+  sponsor images
+\* ------------------------------------------------------------ */
+
+img.diamond-sponsor {
+  max-height: 250px;  
+  width: auto;
+}
+
+img.gold-sponsor {
+  max-height: 135px;  
+  width: auto;
+}
+
+img.silver-sponsor {
+  max-height: 105px;  
+  width: auto;
+}
+
+img.bronze-sponsor {
+  max-height: 65px;  
+  width: auto;
+}
+
+.sponsors-container .row {
+  align-items: center;
+}
+
+.sponsors-container div[class*="col"] {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 /* ------------------------------------------------------------ *\
 	contact
 \* ------------------------------------------------------------ */
@@ -790,6 +827,7 @@ progress {
   border: none;
   background-color: transparent;
   color: #51C9CC;
+  z-index: 1000;
 }
 
 progress::-webkit-progress-bar {
@@ -978,6 +1016,22 @@ progress::-webkit-progress-bar {
   .sponsors-container {
     padding-top: 25px;
   }
+
+  img.diamond-sponsor {
+    max-height: 225px;
+  }
+  
+  img.gold-sponsor {
+    max-height: 85px;
+  }
+  
+  img.silver-sponsor {
+    max-height: 65px;
+  }
+  
+  img.bronze-sponsor {
+    max-height: 45px;
+  }
 }
 
 @media(max-width: 576px) {
@@ -1013,33 +1067,9 @@ progress::-webkit-progress-bar {
     border-left: 1px solid #7FFFD6;
     border-right: 1px solid #7FFFD6;
   }
-}
 
-/* ------------------------------------------------------------ *\
-  sponsor images
-\* ------------------------------------------------------------ */
-
-
-img.diamond-sponsor {  
-  max-height: 250px;  
-  width: auto;
-  margin-bottom: 3em;
-}
-
-img.gold-sponsor {  
-  max-height: 125px;  
-  width: auto;
-  margin-bottom: 3em;
-}
-
-img.silver-sponsor {  
-  max-height: 75px;  
-  width: auto;
-  margin-bottom: 3em;
-}
-
-img.bronze-sponsor {  
-  max-height: 40px;  
-  width: auto;
-  margin-bottom: 3em;
+  .sponsors-container div[class*="col"] {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
 }
