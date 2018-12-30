@@ -746,8 +746,7 @@ p.tracks-des {
   font-size: 1em;
   color: #fff;
   opacity: .85;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 1.2em auto 0 auto;
   max-width: 67vw;
 }
 
