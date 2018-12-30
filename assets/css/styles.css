@@ -225,10 +225,10 @@ a:link,
 :hover,
 :active {
   text-decoration: none !important;
-  -webkit-transition: all .55s ease;
-  -moz-transition: all .55s ease;
-  -o-transition: all .55s ease;
-  transition: all .55s ease;
+  -webkit-transition: all .40s ease;
+  -moz-transition: all .40s ease;
+  -o-transition: all .40s ease;
+  transition: all .40s ease;
 }
 
 .center {
@@ -762,6 +762,13 @@ p.tracks-des {
 img.diamond-sponsor {
   max-height: 250px;  
   width: auto;
+}
+
+.sponsors-container img:hover {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
 }
 
 img.gold-sponsor {
