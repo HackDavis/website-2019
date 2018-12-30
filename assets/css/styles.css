@@ -759,8 +759,12 @@ p.tracks-des {
   sponsor images
 \* ------------------------------------------------------------ */
 
-img.diamond-sponsor {
-  max-height: 250px;  
+.sponsors-container div[class*="col"] {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.sponsors-container img {
   width: auto;
 }
 
@@ -771,28 +775,24 @@ img.diamond-sponsor {
   -moz-opacity: 0.75;
 }
 
+img.diamond-sponsor {
+  max-height: 150px;
+}
+
 img.gold-sponsor {
-  max-height: 135px;  
-  width: auto;
+  max-height: 90px;
 }
 
 img.silver-sponsor {
-  max-height: 105px;  
-  width: auto;
+  max-height: 75px;
 }
 
 img.bronze-sponsor {
-  max-height: 65px;  
-  width: auto;
+  max-height: 60px;
 }
 
 .sponsors-container .row {
   align-items: center;
-}
-
-.sponsors-container div[class*="col"] {
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 
 /* ------------------------------------------------------------ *\
@@ -1044,19 +1044,19 @@ progress::-webkit-progress-bar {
   }
 
   img.diamond-sponsor {
-    max-height: 225px;
+    max-height: 120px;
   }
   
   img.gold-sponsor {
-    max-height: 85px;
+    max-height: 70px;
   }
   
   img.silver-sponsor {
-    max-height: 65px;
+    max-height: 60px;
   }
   
   img.bronze-sponsor {
-    max-height: 45px;
+    max-height: 50px;
   }
 }
 
@@ -1092,10 +1092,5 @@ progress::-webkit-progress-bar {
   .list-features li:nth-child(4) {
     border-left: 1px solid #7FFFD6;
     border-right: 1px solid #7FFFD6;
-  }
-
-  .sponsors-container div[class*="col"] {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
   }
 }
