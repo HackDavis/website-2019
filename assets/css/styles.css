@@ -774,6 +774,12 @@ p.tracks-des {
   -moz-opacity: 0.75;
 }
 
+#co-host-line {
+  color: white;
+  font-size: 2em;
+  padding-right: 0.5rem;
+}
+
 img.diamond-sponsor {
   max-height: 150px;
 }
