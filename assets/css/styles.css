@@ -774,10 +774,10 @@ p.tracks-des {
   -moz-opacity: 0.75;
 }
 
-#co-host-line {
+.cohost-line {
   color: white;
-  font-size: 2em;
-  padding-right: 0.5rem;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 img.diamond-sponsor {
@@ -793,7 +793,7 @@ img.silver-sponsor {
 }
 
 img.bronze-sponsor {
-  height: 60px;
+  max-height: 60px;
 }
 
 .sponsors-container .row {
