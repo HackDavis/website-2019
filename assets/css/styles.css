@@ -308,6 +308,10 @@ p {
   margin-bottom: 0;
 }
 
+img.landing-logo {
+  margin-bottom: 10px;
+}
+
 img.hackdavis {
   width: 18em;
   height: auto;
