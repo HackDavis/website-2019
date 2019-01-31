@@ -293,6 +293,32 @@ p {
   min-height: 100vh;
 }
 
+.landing-logos {
+  display: flex;
+}
+
+.landing-logos div {
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.landing-logos div:last-child {
+  margin-right: 0;
+}
+
+.landing-logos img {
+  height: 90px;
+  width: auto;
+}
+
+.landing-logos-x {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .title {
   display: inline-flex;
   flex-direction: row;
@@ -774,10 +800,10 @@ p.tracks-des {
   -moz-opacity: 0.75;
 }
 
-#co-host-line {
+.cohost-line {
   color: white;
-  font-size: 2em;
-  padding-right: 0.5rem;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 img.diamond-sponsor {
@@ -793,7 +819,7 @@ img.silver-sponsor {
 }
 
 img.bronze-sponsor {
-  height: 60px;
+  max-height: 60px;
 }
 
 .sponsors-container .row {
@@ -982,10 +1008,6 @@ progress::-webkit-progress-bar {
 }
 
 @media(min-width: 768px) {
-  img.landing-logo {
-    width: 8rem;
-  }
-
   #hackdavis {
     font-size: 2.7rem;
   }
@@ -1003,12 +1025,6 @@ progress::-webkit-progress-bar {
 
   .section-title {
     margin-bottom: 20px;
-  }
-
-  img.logo {
-    display: block;
-    width: 200px;
-    transform: translateX(-10px);
   }
 
   .schedule-content {
