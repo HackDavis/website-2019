@@ -364,6 +364,27 @@ img.hackdavis {
   opacity: 1;
 }
 
+#android,#apple {
+  width: 8rem;
+  display: block;
+  margin-top: 50px;
+}
+
+#android {
+  margin-right: 15px;
+}
+
+#android > img {
+  height: auto;
+  width: 100%;
+  transform: scale(1.2);
+}
+
+#apple > img {
+  height: auto;
+  width: 100%;
+}
+
 button.get-notified {
   transform: rotate(0.0001deg);
   -webkit-transform: rotate(0.0001deg);
