@@ -5,6 +5,7 @@
 - global
 - landing
 - stats
+- recap
 - about
 - tracks
 - schedule
@@ -463,7 +464,7 @@ button.sponsor-us:hover {
 }
 
 .stats-content {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -508,6 +509,16 @@ h2.stats {
 .list-features li h2 small {
   font-size: .84em;
   font-weight: 900;
+}
+
+/******* recap *******/
+
+.recap-photos {
+  padding-bottom: 50px;
+}
+
+.recap-video {
+  text-align: center;
 }
 
 /******* about *******/
